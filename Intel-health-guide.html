@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+    <title>健康指南</title>
+
+</head>
+<body>
+<header class="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--小屏幕导航按钮和logo-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo" id="logo">
+                    <a href="home.html">
+                        <img src="images/logo_h.png" alt="logo"/>
+                    </a>
+                </div>
+            </div>
+            <!--小屏幕导航按钮和logo-->
+            <!--导航-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right nav-link">
+                    <li>
+                        <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="cooking-culture-of-China.html">
+                            <i class="icon-food"></i> 中国吃文化
+                        </a>
+                    </li> -->
+                    <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                    </li>
+                    <li class="active"><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                    </li>
+                    <li><a data-toggle="modal"
+                           data-target="#myself"><i class=" icon-user"></i> 制作说明</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="intel-health-guide" class="container">
+    <div class="row">
+        <div class="col-md-5" id="personBody-view" style="background: #4d5255">
+            <progress id="loadProgressBar" value="0" max="36"></progress>
+            <!--<button onClick="loaded()" class="btn btn-success">自动播放</button>-->
+            <canvas id="fullview_canvas" style="margin-left: -15px;height: auto;cursor: all-scroll"></canvas>
+        </div>
+        <div class="col-md-7">
+            <div class="plugthumb item">
+                <div class="tp">
+                    <figure class="effect-bubba">
+                        <img class="lazy"
+                             src="http://images.meishij.net/p/20160217/356e319b4b02bc68b41227d5c6eb6612_150x150.jpg"
+                             width="100%" height="100%"
+                             alt="五谷杂粮好 但有些人不适合" style="display: block;">
+                        <figcaption>
+                            <p style="text-indent:2em;">现如今，五谷杂粮受到了很多人的青睐，认为多吃可以养生保健。虽然五谷杂粮的确有保健养生的作用，但是也并不是所有人都适合哦。</p>
+
+                            <p>
+                                <button type="button" class="btn btn-success"
+                                        onclick="window.open('Intel-health-guide-01.html')">进入
+                                </button>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="plug-info">
+                    <div class="plug-title">
+                        <a href="Intel-health-guide-01.html"
+                           title="五谷杂粮好 但有些人不适合"><i class=" icon-plus-sign-alt"></i> 五谷杂粮好 但有些人不适合 <i
+                                class=" icon-plus-sign-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="plugthumb item">
+                <div class="tp">
+                    <figure class="effect-bubba">
+                        <img class="lazy"
+                             src="http://images.meishij.net/p/20160203/5e8ef627a399b7bd091561ea232f8064_150x150.jpg"
+                             width="100%" height="100%"
+                             alt="5种新鲜食物是最有效的药" style="display: block;">
+                        <figcaption>
+                            <p style="text-indent:2em;">
+                                美国预防医学专家马克·海曼博士表示，对于某些身体不适来说，新鲜食物是最有效的“药物”。美国《健康》杂志最新载文，刊出可用食物解决的八大健康难题。</p>
+
+                            <p>
+                                <button type="button" class="btn btn-success"
+                                        onclick="window.open('Intel-health-guide-02.html')">进入
+                                </button>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="plug-info">
+                    <div class="plug-title">
+                        <a href="Intel-health-guide-02.html" title="5种新鲜食物是最有效的药"><i class=" icon-plus-sign-alt"></i>
+                            5种新鲜食物是最有效的药 <i class=" icon-plus-sign-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+    </div>
+</div>
+<!--制作说明  -->
+<div class="modal fade" id="myself" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <span class="glyphicon glyphicon-info-sign"></span> 制作说明
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-4 col-xs-4 control-label">制作人：</label>
+
+                        <div class="col-sm-8">
+                            <p class="form-control-static">邓思彰</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 col-xs-4 control-label">学院：</label>
+
+                        <div class="col-sm-8">
+                            <p class="form-control-static">信息科学与工程学院</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 col-xs-4 control-label">专业：</label>
+
+                        <div class="col-sm-8">
+                            <p class="form-control-static">信息科学与技术软件工程方向</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 col-xs-4 control-label">学号：</label>
+
+                        <div class="col-sm-8">
+                            <p class="form-control-static">201211010349</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 col-xs-4 control-label">联系方式：</label>
+
+                        <div class="col-sm-8">
+                            <p class="form-control-static">189-5310-2387</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<script>
+    var ctx = null; // global variable 2d context
+    var frame = 1; // 35
+    var width = 0;
+    var height = 0;
+    var started = false;
+    var images = new Array();
+    var startedX = -1;
+    $(function () {
+        var canvas = document.getElementById("fullview_canvas");
+        var colwidth = document.getElementById("personBody-view").offsetWidth;
+        console.log(colwidth);
+        canvas.width = colwidth;// window.innerWidth;
+        canvas.height = 500;//window.innerHeight;
+        width = canvas.width;
+        height = canvas.height;
+        var bar = document.getElementById('loadProgressBar');
+        for (var i = 1; i < 37; i++) {
+            bar.value = i;
+            if (i < 10) {
+                images[i] = new Image();
+                images[i].src = "images/personBody/" + "0" + i + ".jpg";
+            }
+            else {
+                images[i] = new Image();
+                images[i].src = "images/personBody/" + i + ".jpg";
+            }
+        }
+        ctx = canvas.getContext("2d");
+
+        // mouse event
+        canvas.addEventListener("mousedown", doMouseDown, false);
+        canvas.addEventListener('mousemove', doMouseMove, false);
+        canvas.addEventListener('mouseup', doMouseUp, false);
+        // loaded();
+
+        // frame = 1
+        frame = 1;
+        images[frame].onload = function () {
+            redraw();
+            bar.style.display = 'none';
+        }
+    })
+    function doMouseDown(event) {
+        var x = event.pageX;
+        var y = event.pageY;
+        var canvas = event.target;
+        var loc = getPointOnCanvas(canvas, x, y);
+        console.log("mouse down at point( x:" + loc.x + ", y:" + loc.y + ")");
+        startedX = loc.x;
+        started = true;
+    }
+
+    function doMouseMove(event) {
+        var x = event.pageX;
+        var y = event.pageY;
+        var canvas = event.target;
+        var loc = getPointOnCanvas(canvas, x, y);
+        if (started) {
+            var count = Math.floor(Math.abs((startedX - loc.x) / 30));
+            var frameIndex = Math.floor((startedX - loc.x) / 30);
+            while (count > 0) {
+                console.log("frameIndex = " + frameIndex);
+                count--;
+                if (frameIndex > 0) {
+                    frameIndex--;
+                    frame++;
+                } else if (frameIndex < 0) {
+                    frameIndex++;
+                    frame--;
+                }
+                else if (frameIndex == 0) {
+                    break;
+                }
+
+                if (frame >= 36) {
+                    frame = 1;
+                }
+                if (frame <= 0) {
+                    frame = 35;
+                }
+                redraw();
+            }
+        }
+    }
+
+    function doMouseUp(event) {
+        console.log("mouse up now");
+        if (started) {
+            doMouseMove(event);
+            startedX = -1;
+            started = false;
+        }
+    }
+
+    function getPointOnCanvas(canvas, x, y) {
+        var bbox = canvas.getBoundingClientRect();
+        return {
+            x: x - bbox.left * (canvas.width / bbox.width),
+            y: y - bbox.top * (canvas.height / bbox.height)
+        };
+    }
+
+
+    function loaded() {
+       mester =  setTimeout(update, 1000 / 8);
+    }
+
+    function redraw() {
+        // var imageObj = document.createElement("img");
+        // var imageObj = new Image();
+        var imageObj = images[frame];
+        ctx.clearRect(0, 0, width, height)
+        ctx.drawImage(imageObj, 0, 0, width, height);
+    }
+    function update() {
+        redraw();
+        frame++;
+        if (frame >= 35) frame = 1;
+        setTimeout(update, 1000 / 8);
+    }
+</script>
+</body>
+</html>

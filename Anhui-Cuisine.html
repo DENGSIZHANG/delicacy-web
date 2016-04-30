@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>中国八大菜系之徽菜</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/easing.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id="body" style="overflow-y: visible;">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <figure class="icon">
+                    <img src="images/logo.png" alt="欢迎欢迎热烈欢迎">
+                </figure>
+                <a href="" class="navbar-brand">中国菜系之<b>徽菜</b></a>
+            </div>
+
+        </div>
+        <!--小屏幕导航按钮和logo-->
+
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav-link">
+                <li class="active">
+                    <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a></a>
+                </li>
+
+                <li>
+                    <a href="cooking-culture-of-China.html">
+                        <i class="icon-food"></i> 中国吃文化
+                    </a>
+                </li>
+                <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                </li>
+                <li><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div id="eight_btn_section">
+    <div class="container-fluid content">
+        <div class="row eight_btn">
+            <div class="col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Shandong-cuisine.html" type="button" class="btn btn-info typeOfBtn">鲁菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Sichuan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">川菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Jiangsu-Cuisine.html" type="button" class="btn btn-info typeOfBtn">苏菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-4">
+                <a href="Guangzhou-Cuisine.html" type="button" class="btn btn-info typeOfBtn">粤菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Zhejiang-Cuisine.html" type="button" class="btn btn-info typeOfBtn">浙菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Fujian-Cuisine.html" type="button" class="btn btn-info typeOfBtn">闽菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Hunan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">湘菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Anhui-Cuisine.html" type="button" class="btn btn-info active">徽菜</a>
+            </div>
+            <div class="col-md-2 col-sm-2 "></div>
+        </div>
+    </div>
+</div>-->
+<!--页面主体-->
+<div id="food-section" class="Anhui-cuisine">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class='all'>
+                    <div class='box'>
+                        <a href='Shandong-cuisine.html'>
+                            <div class='card bg-01'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 鲁菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Sichuan-Cuisine.html'>
+                            <div class='card bg-02'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 川菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Jiangsu-Cuisine.html'>
+                            <div class='card bg-03'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 苏菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Guangzhou-Cuisine.html'>
+                            <div class='card bg-04'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 粤菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Zhejiang-Cuisine.html'>
+                            <div class='card bg-05'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 浙菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Fujian-Cuisine.html'>
+                            <div class='card bg-06'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 闽菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Hunan-Cuisine.html'>
+                            <div class='card bg-07'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 湘菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Anhui-Cuisine.html'>
+                            <div class='card bg-08 active'><span class='card-content'><span
+                                    class="glyphicon glyphicon-map-marker"></span> 徽菜</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧鲁菜介绍页面-->
+            <div class="col-md-10">
+                <div class="row ">
+                    <ol class="breadcrumb col-md-12">
+                        <li><!--<span class="glyphicon glyphicon-map-marker"></span>--><i class="icon-tint"></i> 当前位置：</li>
+                        <li><a href="home.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="index.html"><i class="icon-coffee"></i> 八大菜系</a></li>
+                        <li class="active">徽菜</li>
+                    </ol>
+                </div>
+                <!--百度百科-->
+                <section id="section1">
+                    <h4>（一）百度百科</h4>
+
+                    <p style="text-indent: 2em">
+                        徽菜菜系又称“徽帮"，是中国汉族八大菜系之一。徽菜起源于南宋时期的徽州府(今安徽省黄山市、婺源县和绩溪县一带，府治在今安徽歙县)，原是徽州山区的地方风味。由于徽商的崛起，这种地方风味逐渐进入市肆，流传于苏、浙、赣、闽、沪、鄂以至长江中、下游区域，具有广泛的影响，明清时期一度居于八大菜系之首。徽菜起源于徽州府城歙县（古徽州），徽菜发端于唐宋，兴盛于明清，民国间徽菜在绩溪继续进一步发展。安徽省绩溪县被授予中国徽菜之乡称号，每年均举办国际徽菜饮食文化节。
+                    </p>
+                </section>
+                <section class="row">
+                    <h4 id="section2">（二）主要流派</h4>
+
+                    <div class="col-md-5 col-sm-5" id="div">
+                        <svg id="graph" width="100%">
+                        </svg>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div>
+                            <p>
+                                <b>皖南菜</b>，是以黄山、宣城地方风味为主，以黄山（屯溪）、绩溪、歙县等地方菜肴为代表，是徽菜的主流和渊源。其主要特点食咸鲜味醇、原汁原味、擅长烧、炖、焖、蒸，讲究火功，擅长以火腿佐味，冰糖提鲜。<br/>
+                                <b>皖北菜</b>，以蚌埠、阜阳、淮北、宿州、亳州地方风味为主，以蚌埠、阜阳、花瓣等地方菜肴味代表。其主要特点石咸鲜微辣、酥脆醇厚。<br/>
+                                <b>合肥菜</b>，以合肥、六安、滁州地方风味为主，以合肥地方等菜肴微代表。有自己的风味特色并汇集和融合全省各地菜肴的精华，擅长用咸货出鲜，酱料附味。<br/>
+                                <b>淮南菜</b>，淮南石豆腐的发源地，豆腐菜肴历史悠久，品种繁多，是徽菜中的一块金子招牌。豆腐宴集邮“白如玉、细如脂、嫩如肤、浓如酪”的美誉。<br/>
+                                <b>皖江菜</b>，以沿江两岸的芜湖、安庆、马鞍山、池州、铜陵、巢湖地方口味为主，以芜湖、安庆、巢湖等地方菜肴味代表。其主要特点是咸鲜微甜、酥嫩清爽。擅长红烧、清蒸和烟熏，以烹调河鲜，家禽见长，讲究刀工，注重形色，擅长用糖调味。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--发展历史-->
+
+                        <section id="section3">
+                            <h4>（三）发展历史</h4>
+
+                            <div class="panel panel-default" id="history-info">
+                                <div class="panel-body">
+                                    <table class="table table-condensed">
+                                        <tbody>
+                                        <tr>
+                                            <td class="col-xs-2 first-Tr" id="section3-1"><p><span
+                                                    class="glyphicon glyphicon-hand-right">&nbsp;</span>起源</p>
+                                            </td>
+                                            <td class="first-Tr">
+                                                <p>
+                                                    徽菜发祥于南宋时期，起源于古徽州今绩溪、歙县一带。距今已有1000多年的历史，是徽州传统的民间菜肴。
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="section3-3"><p><span
+                                                    class="glyphicon glyphicon-hand-right">&nbsp;</span>明清时期
+                                            </p></td>
+                                            <td><p>
+                                                明代晚期至清代乾隆末年是徽商的鼎盛时期，实力及影响力位居全国10大商帮之首，其足迹几遍天下，徽菜也伴随着徽商的发展，逐渐声名远扬。哪里有徽商，哪里就有徽菜馆。徽州人在全国各地开设徽馆达上千家，仅上海就有140多家，足见其涉及面之广，影响力之大。<br/>
+                                                清乾隆55年（1790年），徽班首次进京，徽菜随之北上，开始登足京都，所设的徽菜馆始称为“徽馆”，后来成为徽州人旅外菜馆业的统称，而其中绩溪人尤为最多。
+                                            </p></td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td id="section3-4"><p><span
+                                                    class="glyphicon glyphicon-hand-right">&nbsp;</span>如今</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    2006年2月25日至3月15日在北京安徽大厦隆重举办“中国徽菜之乡（绩溪）”美食文化周，此次徽菜进京，是徽班的第二次进京。<br/>
+                                                    2009年《中国徽菜标准》出版，收录涵盖皖南、皖江、皖北、合肥、淮南五大地方风味。《中国徽菜标准》的制定与实施将对展示徽菜精华，重塑徽菜品质，推动徽菜市场的扩展，对打造徽菜品牌有着极其重要的促进作用
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><p>
+                                                在悠久的历史长河中，徽菜经过历代徽厨的辛勤劳动，兼收并蓄，不断总结，不断创新。以就地取材，选料严谨，巧妙用火，功夫独特，擅长烧炖，浓淡适宜，讲究食补，以食补身，注重文化，底蕴深厚的特点而成为雅俗共赏，南北兼宜，独具一格，自成一体的著名菜系。</p>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                <!--经典菜品-->
+                <section id="section4">
+                    <!--<div class="col-md-12">-->
+                    <h4>（四）经典菜品</h4>
+
+                    <div class="main-posts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="device" class="gridalicious">
+                                    <div class="galcolumn">
+                                        <!--菜品图片展示-1-->
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Anhui-cuisine/1.jpg" alt="臭鳜鱼">
+
+                                                <div class="title-over">
+                                                    <h4><a>臭鳜鱼</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=I6CCL1JzToC5gCiSqJO3CfKJNHy3npGKzKJDLeCEtCcuhb8dHSTJbbR7t8ndjaF9Ib5tNJarjc1KGRzj5k6gHa"
+                                                                target="_blank">臭鳜鱼</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            又称臭桂鱼、桶鲜鱼、桶鱼，腌鲜鱼，是一道汉族传统名菜，徽菜的代表之一，在安徽徽州地区（徽州即今安徽省黄山市一带）所谓腌鲜，在徽州本地土话中有臭的意思。这“风味鳜鱼”闻起来臭，吃起来香，肉质鲜嫩、醇滑爽口，保持了鳜鱼的本味原汁。俗名臭鳜鱼。制法独特，食而得异香。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Anhui-cuisine/2.jpg" alt="清蒸石鸡">
+
+                                                <div class="title-over">
+                                                    <h4><a>清蒸石鸡</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/178818.htm"
+                                                                target="_blank">清蒸石鸡</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            麻辣小龙虾又叫长沙口味虾、香辣小龙虾等，是湖南省著名的汉族小吃，以小龙虾制成，口味辣鲜香，色泽红亮，质地滑嫩，滋味香辣。20世纪末开始传遍全国，成为人们夏夜街边啤酒摊的经典小吃。 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Anhui-cuisine/3.jpg" alt="问政山笋">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">问政山笋</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/56287.htm"
+                                                                target="_blank">问政山笋</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            问政山笋是徽州山区汉族传统名菜。竹笋是徽菜中的一味山珍，问政山笋在所有的笋味中最为鲜嫩，但不够香，加上香肠、香菇等增香，则弥补了不足，这道菜就称为两香问政山笋。将笋加火腿骨、鲜猪肉骨烧焖，中途加进香肠、香菇。成熟后去骨装盘。菜品有红（香肠）、褐（香菇）、奶黄（问政山笋）三种颜色。笋经烧焖则入味透、质脆嫩，有香肠、香菇等混合芳香，是黄山春季时令菜。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Anhui-cuisine/4.jpg" alt="火烘鱼">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">火烘鱼</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/395635.htm"
+                                                                target="_blank">火烘鱼</a></h4>
+
+                                                        <p>
+                                                            火烘鱼是一道沿江菜，可以用作健脾开胃调理。软嫩微酥，带有烟熏香味，以食醋相佐，别具风格。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Anhui-cuisine/5.jpg" alt="红烧桃花鳜鱼">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">红烧桃花鳜鱼</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/183065.htm"
+                                                                target="_blank">红烧桃花鳜鱼</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            红烧桃花鳜是徽州特产，汉族传统名菜之一。桃花鳜原名石级鱼，在黄山桃花盛开时最肥美，故名桃花鳜。这道菜色红诱人，味鲜软嫩，香气扑鼻，是黄山春季时令菜肴。 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Anhui-cuisine/6.jpg" alt="虎皮毛豆腐">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">虎皮毛豆腐</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/183064.htm"
+                                                                target="_blank">虎皮毛豆腐</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            “毛豆腐”是徽州传统名菜。将豆腐进行人工发酵，让其表面生长出一层白色茸毛(白色菌丝)，故称“毛豆腐”。豆腐在发酵中蛋白质分解成多种氨基酸，味道比一般豆腐更鲜美。“虎皮毛豆腐”则是因茸毛经煎烤后呈虎皮条纹而得名。 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-12 more-info">-->
+                                <!--<a type="button" class="btn btn-info"-->
+                                <!--href="http://www.360doc.com/content/14/0929/01/18960088_413124870.shtml"-->
+                                <!--target="_blank">查看十大经典鲁菜</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--右侧锚点介绍-->
+            <div class="col-md-1">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked left-nav">
+                        <li class="active"><a href="#body">百度百科</a></li>
+                        <li><a href="#section2">主要流派</a></li>
+                        <li><a href="#section3">发展历史</a></li>
+                        <li><a href="#section4">经典菜品</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--返回顶部按钮-->
+<div class="footer-section">
+    <div class="container">
+        <a href="javascript:void(0)" id="toTop" style="display: none;"></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="javascript/d3.min.js"></script>
+<script type="text/javascript" src="javascript/global.js"></script>
+<script type="text/javascript" src="javascript/jquery.grid-a-licious.min.js"></script>
+<!--瀑布流加载图片-->
+
+<script type="text/javascript">
+    $(function () {
+        ///徽菜的成份结构
+        var svg = d3.select("#graph");
+        var s = document.getElementById("div").clientWidth;
+        var width = s;
+        console.log("宽度" + s);
+        var height = 320;
+        var nodes = [{name: "徽菜"},
+            {name: "皖南菜"},
+            {name: "皖江菜"},
+            {name: "淮南菜"},
+            {name: "皖北菜"},
+            {name: "合肥菜"}
+        ];
+        var edges = [{source: 0, target: 1},
+            {source: 0, target: 2},
+            {source: 0, target: 3},
+            {source: 0, target: 4},
+            {source: 0, target: 5}
+        ];
+        var force = d3.layout.force()
+                .nodes(nodes)           //设定节点数组
+                .links(edges)           //设定连线数组
+                .size([width, height])   //设定作用范围
+                .linkDistance(150)       //设定连线的距离
+                .charge(-400);          //设定节点的电荷数
+        force.start();//开启布局计算
+        console.log(nodes);
+        console.log(edges);
+        var color = d3.scale.category20();
+
+        //绘制连线
+        var lines = svg.selectAll(".forceLine")
+                .data(edges)
+                .enter()
+                .append("line")
+                .attr("class", "forceLine")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 1);
+        //绘制节点
+        var circles = svg.selectAll(".forceCircles")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "forceCircle")
+                .attr("r", 35)
+                .style("fill", function (d, i) {
+                    return color(i);
+                })
+                .call(force.drag);//允许拖动
+        //绘制文字
+        var texts = svg.selectAll(".forceText")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("class", "forceText")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("dx", "-1.2em")
+                .attr("dy", ".3em")
+                .text(function (d) {
+                    return d.name;
+                });
+
+        force.on("tick", function () {
+            //更新连线的终点坐标
+            lines.attr("x1", function (d) {
+                return d.source.x;
+            });
+            lines.attr("y1", function (d) {
+                return d.source.y;
+            });
+            lines.attr("x2", function (d) {
+                return d.target.x;
+            });
+            lines.attr("y2", function (d) {
+                return d.target.y;
+            });
+            //更新节点坐标
+            circles.attr("cx", function (d) {
+                return d.x;
+            });
+            circles.attr("cy", function (d) {
+                return d.y;
+            });
+            //更新文字节点的坐标
+            texts.attr("x", function (d) {
+                return d.x;
+            });
+            texts.attr("y", function (d) {
+                return d.y;
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

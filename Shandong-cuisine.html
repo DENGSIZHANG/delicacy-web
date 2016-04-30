@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>中国八大菜系之鲁菜</title>
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/easing.js"></script>
+</head>
+<!--body中的data控制的是有右边的滑动控制条-->
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id="body" style="overflow-y: visible;">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <figure class="icon">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="欢迎欢迎热烈欢迎">
+                    </a>
+                </figure>
+                <a href="Shandong-cuisine.html" class="navbar-brand">八大菜系之<b>鲁菜</b></a>
+            </div>
+
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav-link">
+                <li class="active">
+                    <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a></a>
+                </li>
+
+                <!-- <li>
+                    <a href="cooking-culture-of-China.html">
+                        <i class="icon-food"></i> 中国吃文化
+                    </a>
+                </li> -->
+                <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                </li>
+                <li><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div id="eight_btn_section">
+    <div class="container-fluid content">
+        <div class="row eight_btn">
+            <div class="col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Shandong-cuisine.html" type="button" class="btn btn-info active">鲁菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Sichuan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">川菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Jiangsu-Cuisine.html" type="button" class="btn btn-info typeOfBtn">苏菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-4">
+                <a href="Guangzhou-Cuisine.html" type="button" class="btn btn-info typeOfBtn">粤菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Zhejiang-Cuisine.html" type="button" class="btn btn-info typeOfBtn">浙菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Fujian-Cuisine.html" type="button" class="btn btn-info typeOfBtn">闽菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Hunan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">湘菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Anhui-Cuisine.html" type="button" class="btn btn-info typeOfBtn">徽菜</a>
+            </div>
+            <div class="col-md-2 col-sm-2 "></div>
+        </div>
+    </div>
+</div>-->
+<!--菜系介绍页面主体-->
+<div id="food-section" class="Shandong-cuisine">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class='all'>
+                    <div class='box'>
+                        <a href='Shandong-cuisine.html'>
+                            <div class='card bg-01 active'><span class='card-content'><span
+                                    class="glyphicon glyphicon-map-marker"></span> 鲁菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Sichuan-Cuisine.html'>
+                            <div class='card bg-02'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 川菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Jiangsu-Cuisine.html'>
+                            <div class='card bg-03'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 苏菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Guangzhou-Cuisine.html'>
+                            <div class='card bg-04'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 粤菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Zhejiang-Cuisine.html'>
+                            <div class='card bg-05'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 浙菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Fujian-Cuisine.html'>
+                            <div class='card bg-06'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 闽菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Hunan-Cuisine.html'>
+                            <div class='card bg-07'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 湘菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Anhui-Cuisine.html'>
+                            <div class='card bg-08'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 徽菜</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧鲁菜介绍页面-->
+            <div class="col-md-10">
+                <div class="row ">
+                    <ol class="breadcrumb col-md-12">
+                        <li><!--<span class="glyphicon glyphicon-map-marker"></span>--><i class="icon-tint"></i> 当前位置：</li>
+                        <li><a href="home.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="index.html"><i class="icon-coffee"></i> 八大菜系</a></li>
+                        <li class="active">鲁菜</li>
+                    </ol>
+                </div>
+                <!--百度百科和主要流派-->
+                <div class="row">
+                    <div class="col-md-5" id="div">
+                        <svg id="graph" width="100%"></svg>
+                    </div>
+                    <div class="col-md-7">
+                        <section id="section1">
+                            <h4>（一）百度百科</h4>
+
+                            <p>鲁菜，是起源于山东的齐鲁风味，是中国汉族四大菜系（也是八大菜系）中唯一的自发型菜系（相对于淮扬、川、粤等影响型菜系而言）<a href="#"
+                                                                                              class="tooltip-test link"
+                                                                                              data-toggle="tooltip"
+                                                                                              title="郑昌江．中国菜系及其比较．北京：中国财政经济出版社，1992"><sub>[1]</sub></a>，是历史最悠久<a
+                                    href="http://open.163.com/movie/2014/1/9/9/M9IC3CAS5_M9KUCIJ99.html"><sub>[2]</sub></a>
+                                、技法最丰富<a
+                                        href="http://travel.cntv.cn/2013/02/08/ARTI1360286319785947_2.shtml"><sub>[3]</sub></a>
+                                、难度最高<a href="http://fashion.sina.com.cn/l/ts/2014-02-21/081535529.shtml"
+                                        class="link"><sub>[4]</sub></a>
+                                、最见功力<a href="#" class="tooltip-test link" data-toggle="tooltip"
+                                        title="张起均．烹调原理：中国商业出版社，1985"><sub>[5]</sub></a> 的菜系。</p>
+                        </section>
+                        <section id="section2">
+                            <h4>（二）主要流派</h4>
+
+                            <p>
+                                鲁菜是北方菜的代表口味，也是整个北方饮食传统的根，其影响之深之远，非其他任何菜系可比。我们总是要回归本土文化的，需要的不过是时间，不急，慢慢来吧。经过长期的发展和演变，<b>鲁菜系</b>逐渐形成包括青岛在内，以福山帮为代表的<b>胶东派</b>，以及包括德州、泰安在内的<b>济南派</b>两个流派，有堪称“阳春白雪”的典雅华贵的<b>孔府菜</b>，还有星罗棋布的<b>各种地方菜和风味小吃</b>。
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <!--发展历史-->
+                <section id="section3">
+                    <h4>（三）发展历史</h4>
+                    <div class="panel panel-default" id="history-info">
+                        <div class="panel-body">
+                            <table class="table table-condensed">
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-2 first-Tr" id="section3-1"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>春秋战国时期</p>
+                                    </td>
+                                    <td class="first-Tr"><p>齐鲁肴馔便崭露头 角，它以牛、羊、猪为主料，
+                                        还善于制作家禽、野味和海鲜。对当时的烹饪要求及风尚嗜好，有许多文字记载。在西周、秦汉时期，鲁国都城曲阜和齐国都城临淄，都是相当繁华的城市，饮食行业盛极一时，名厨辈出。齐桓公的宠臣易牙，在得志前就是一个高明的厨师。《礼记》
+                                        一书对膳、食、 饮、烩、脯、 羹、珍 等，从原料搭配、烹调方法到调味要求，都做了专门的记述。 《礼记・内则 》 称 “
+                                        调和方法，因料而用；五味之用, 因时而易”。对调味的要求是“凡和，春多酸，夏多苦，秋多辛，冬多咸，调以滑甘” 。《礼记》
+                                        已基本概述了烹、煮、烤、 烩、炮等 多种烹调方法和要求。
+                                        由此可见，史料中关于烹饪理论的论述，有许多是来自齐鲁之邦的，它们在这些地区广为流传，相沿成习，从而奠定了鲁菜系的基础。</p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-2"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>汉魏六朝时期
+                                    </p></td>
+                                    <td><p>这一时期, 鲁菜演进较快。 贾思勰在 《齐民要术》
+                                        中，对黄河流域特别是山东地区的烹调方法，做了较为全面的总结。书中提到的“蒸、煮、烤、酿、煎、炒、熬、烹、炸、腊”的烹饪方法，以及“盐、豉、醋、酱、酒、蜜、椒”等调味方法，仍在鲁菜乃至中国菜中广为运用。书中还记述了一些名菜的制作方法，蜚声中外的烤鸭、烤乳猪，在当时已在这个地区广为流传。
+                                        《齐民要术》 中有关烹饪的论述，对鲁菜和整个中国菜的形成和发展产生了深远的影响。</p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-3"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>隋、唐、宋、金
+                                    </p></td>
+                                    <td><p>历经隋、唐、宋、金各代的提高和锤炼，鲁菜逐渐成为北方菜的代表。</p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-4"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>元明清时期
+                                    </p></td>
+                                    <td><p>鲁菜保持古朴的情韵，学习了其他菜系的长处，又有了新的发展。这时鲁菜大量进入宫廷，成为御膳的珍馐，并在我国华北、东北等地区广为采用。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-5"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>如今</p>
+                                    </td>
+                                    <td>
+                                        <p>为适应多种需要，厨师们在继承传统技艺的基础上，巧运匠心，竞相献艺，不断烹制新菜，改进研制了不少采用多种原料配置、 运用
+                                            多种加工技法、兼备多种口味特色、讲究多种艺术造型的新菜品，使鲁菜在保持传统风味的基础上，向着加工更精细、造型更美观以及科学配膳等方向推进了一大步。</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!--经典菜品-->
+                <section id="section4">
+                    <!--<div class="col-md-12">-->
+                    <h4>（四）经典菜品</h4>
+
+                    <div class="main-posts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="device" class="gridalicious">
+                                    <div class="galcolumn">
+                                        <!--菜品图片展示-1-->
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Lu-cai/1.jpg" alt="把子肉">
+
+                                                <div class="title-over">
+                                                    <h4><a>把子肉</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/subview/21298/21298.htm?bkfr=detailtbl"
+                                                                target="_blank">把子肉</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            把子肉是淮海地区经典的汉族名菜之一，为济南名吃。把子肉采用上好猪五花肉烹制，有肥而不腻的特殊口感，与用饴糖酱色上好肉汤慢火烹制的菜品相组合，刚好用来下饭。而一口饭一口肉的搭配就恰好把米香肉香统统带出来。把子肉多为午餐食用，但作为晚餐也非常适宜。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Lu-cai/2.jpg" alt="一品豆腐">
+
+                                                <div class="title-over">
+                                                    <h4><a>一品豆腐</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/21850.htm"
+                                                                target="_blank">一品豆腐</a>
+                                                        </h4>
+
+                                                        <p>一品豆腐是一道经典的汉族名菜，属于孔府菜。此次白细鲜嫩，营养丰富而为人所喜食。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Lu-cai/3.jpg" alt="九转大肠">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">九转大肠</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=a5YrMrIeG6Ud1Gtb5uDayKGPPagF9bpUJXUahbvg_24a_HSN_wyWoTwXvsgsqO7x4qpNRl8hqwBN38ysgar0Nq"
+                                                                target="_blank">九转大肠</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            九转大肠是山东省汉族传统名菜。此菜是清朝光绪初年，济南九华林酒楼店主首创，开始名为“红烧大肠”，后经过多次多次改进，红烧大肠味道进一步提高。许多著名人士在该店设宴时均备“红烧大肠”一菜。一些文人雅士食后，感到此菜确实与众不同，别有滋味，为取悦店家喜“九”之癖，并称赞厨师制作此菜像道家“九炼金丹”一样精工细作，便将其更名为“九转大肠”。
+                                                            现代人又根据相关工艺制作出了纯粹由素食制作的九转大肠，也就是素九转大肠。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Lu-cai/5.jpg" alt="糖醋鲤鱼">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">糖醋鲤鱼</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/3039.htm"
+                                                                target="_blank">糖醋鲤鱼</a></h4>
+
+                                                        <p>糖醋鲤鱼是山东省经典的汉族名菜之一。据说“糖醋鲤鱼”最早始于黄河重镇——泺口镇。糖醋鲤鱼色泽金黄，外焦里嫩，香甜酸醇。
+                                                            济南北临黄河，黄河鲤鱼不仅肥嫩鲜美，而且金鳞赤尾，形态可爱，是宴会上的佳肴。黄河鲤鱼的肉味纯正，鲜嫩肥美，《济南府志》上早有“黄河之鲤，南阳之蟹，且入食谱”的记载。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Lu-cai/4.jpg" alt="葱烧海参">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">葱烧海参</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/52802.htm"
+                                                                target="_blank">葱烧海参</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            葱烧海参是中华特色美食，鲁菜经典名菜。从山东源入，以水发海参和大葱为主料，海参清鲜，柔软香滑，葱段香浓，食后无余汁。是“古今八珍”之一，葱香味醇，营养丰富，滋肺补肾。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Lu-cai/6.jpg" alt="四喜丸子">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">四喜丸子</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=hVpDlukOgwBduJ8W2W_G3alwsCn1MbcJebgZzh70vFu5niTSW1O4A9xROYfMej3bLBJfqMOoIqfnl-f1xq6Saq"
+                                                                target="_blank">四喜丸子</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            四喜丸子是经典的汉族传统名菜之一，属于豫菜菜系。由四个色、香、味俱佳的肉丸组成，寓人生福、禄、寿、喜四大喜事。常用于喜宴、寿宴等宴席中的压轴菜，以取其吉祥之意。四喜丸子从外观上来说，由四个较大的肉丸以及其他辅料组成。四喜丸子做法与狮子头基本一致，只是四喜丸子限用四个肉丸。主要用料为猪肉馅、鸡蛋、葱花等。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </section>
+                <section id="section5">
+                    <div class="row">
+                        <h4>（四）影视记录</h4>
+                        <div class="col-md-6">
+                            <p>&nbsp;</p>
+                            <p>
+                                不管是否情愿，生活总在催促我们迈步向前，人们整装、启程、跋涉、落脚，停在哪里，哪里就会燃起灶火。从个体生命的迁徙到食材的交流运输，从烹调方法的演变到人生命运的流转，人和食物的匆匆脚步从来不曾停歇。行走一生的脚步，起点、终点，归根到底都是家所在的地方，这是中国人秉持千年的信仰，朴素，但有力量。甘肃山丹牧场，老谭夫妇准备向下一站进发；宁夏固原，回乡麦客们开始收割自家的麦子；东海，夫妻船承载着对收获的盼望。这是剧变的中国，人和食物比任何时候走得更快。无论他们的脚步怎样匆忙，总有一种味道，以其独有的方式提醒我们，认清明天的去向，不忘昨日的来处。
+                            </p>
+                            <p class="pull-right">--《舌尖上的中国 第二季》 第一集 脚步</p>
+                        </div>
+                        <div class="col-md-6">
+                            <video width="100%" height="" controls="controls" class="video">
+                                <source src="http://7xqw1a.media1.z0.glb.clouddn.com/%E8%84%9A%E6%AD%A5_%E9%AB%98%E6%B8%85.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+            <!--右侧锚点介绍-->
+            <div class="col-md-1">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked left-nav">
+                        <li class="active"><a href="#body">百度百科</a></li>
+                        <li><a href="#section2">主要流派</a></li>
+                        <li><a href="#section3">发展历史</a></li>
+                        <li><a href="#section4">经典菜品</a></li>
+                        <li><a href="#section5">影视记录</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--返回顶部按钮-->
+<div class="footer-section">
+    <div class="container">
+        <a href="javascript:void(0)" id="toTop" style="display: none;"></a>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="javascript/d3.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.grid-a-licious.min.js"></script>
+<script type="text/javascript" src="javascript/global.js"></script>
+<!--瀑布流加载图片-->
+<script type="text/javascript">
+    $(function () {
+        ///鲁菜的成份结构
+        var svg = d3.select("#graph");
+        var s = document.getElementById("div").clientWidth;
+        var width = s;
+        console.log("宽度" + s);
+        var height = 320;
+        var nodes = [{name: "鲁菜"},
+            {name: "济南菜"},
+            {name: "胶东菜"},
+            {name: "鲁西南"},
+            {name: "孔府菜"}
+        ];
+        var edges = [{source: 0, target: 1},
+            {source: 0, target: 2},
+            {source: 0, target: 3},
+            {source: 0, target: 4}
+        ];
+        var force = d3.layout.force()
+                .nodes(nodes)           //设定节点数组
+                .links(edges)           //设定连线数组
+                .size([width, height])   //设定作用范围
+                .linkDistance(150)       //设定连线的距离
+                .charge(-400);          //设定节点的电荷数
+        force.start();//开启布局计算
+        console.log(nodes);
+        console.log(edges);
+        var color = d3.scale.category20();
+
+        //绘制连线
+        var lines = svg.selectAll(".forceLine")
+                .data(edges)
+                .enter()
+                .append("line")
+                .attr("class", "forceLine")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 1);
+        //绘制节点
+        var circles = svg.selectAll(".forceCircles")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "forceCircle")
+                .attr("r", 35)
+                .style("fill", function (d, i) {
+                    return color(i);
+                })
+                .call(force.drag);//允许拖动
+        //绘制文字
+        var texts = svg.selectAll(".forceText")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("class", "forceText")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("dx", "-1.2em")
+                .attr("dy", ".3em")
+                .text(function (d) {
+                    return d.name;
+                });
+
+        force.on("tick", function () {
+            //更新连线的终点坐标
+            lines.attr("x1", function (d) {
+                return d.source.x;
+            });
+            lines.attr("y1", function (d) {
+                return d.source.y;
+            });
+            lines.attr("x2", function (d) {
+                return d.target.x;
+            });
+            lines.attr("y2", function (d) {
+                return d.target.y;
+            });
+            //更新节点坐标
+            circles.attr("cx", function (d) {
+                return d.x;
+            });
+            circles.attr("cy", function (d) {
+                return d.y;
+            });
+            //更新文字节点的坐标
+            texts.attr("x", function (d) {
+                return d.x;
+            });
+            texts.attr("y", function (d) {
+                return d.y;
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

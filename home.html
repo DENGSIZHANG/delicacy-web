@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>美食网站</title>
+    <link rel="stylesheet" type="text/css" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style/jquery.fullPage.css"/>
+    <link type="text/css" rel="stylesheet" href="style/animate.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style/mainStyle.css"/>
+    <link rel="stylesheet" href="style/flipclock.css"/>
+    <script src="javascript/modernizr.custom.js"></script>
+</head>
+<body>
+<header id="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container header">
+            <!--小屏幕导航按钮和logo-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo" id="logo">
+                    <a>
+                        <img src="images/logo_h.png" alt="logo"/>
+                    </a>
+                </div>
+            </div>
+            <!--小屏幕导航按钮和logo-->
+            <!--导航-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="navg-item">
+                        <a class="navg-link" href="index.html">
+                            <i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a>
+                    </li>
+                
+                    <li class="navg-item">
+                        <a class="navg-link" href="food-and-food.html">
+                            <i class="icon-coffee"></i>&nbsp;美食典故</a>
+                    </li>
+                    <li class="navg-item">
+                        <a class="navg-link" href="Intel-health-guide.html">
+                            <i class="icon-stethoscope"></i>&nbsp;健康指南</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div id="pagescroll">
+    <section class="section section4">
+        <canvas></canvas>
+        <div class="inner">
+            <div class="main">
+                <p class="summary">能吃，是一种本事。</p>
+                <p class="summary">会吃，是一门艺术。</p>
+                <p class="into">
+                    <!--<a href="#" class="button casually">随便看看</a>-->
+                    <a href="index.html" class="button casually">马上进入</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section section1">
+        <div class="container">
+            <header>
+                <h2>中国八大菜系知多少</h2>
+            </header>
+            <ul id="elasticstack" class="elasticstack">
+                <li><img src="http://7xqw1a.media1.z0.glb.clouddn.com/shandong3.png" alt="01"/><h5>鲁菜</h5></li>
+                <li><img src="img/2.jpg" alt="02"/><h5>川菜</h5></li>
+                <li><img src="img/3.jpg" alt="03"/><h5>苏菜</h5></li>
+                <li><img src="img/4.jpg" alt="04"/><h5>粤菜</h5></li>
+                <li><img src="img/5.jpg" alt="05"/><h5>浙菜</h5></li>
+                <li><img src="img/6.jpg" alt="06"/><h5>闽菜</h5></li>
+                <li><img src="img/7.jpg" alt="07"/><h5>湘菜</h5></li>
+                <li><img src="img/8.jpg" alt="08"/><h5>徽菜</h5></li>
+            </ul>
+        </div>
+        <!-- /container -->
+    </section>
+    <section class="section section5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="clock"></div>
+                </div>
+            </div>
+            <div class="row" id="breakfast" style="display: none">
+                <div class="col-md-6">
+                    <h3>早餐时间</h3>
+                    <img src="http://down.tutu001.com/d/file/20100920/98efdfae929a3e38a98de84e8a_560.jpg"
+                         class="img-responsive img-circle" alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default" style="margin-top: 20px">
+                        <div class="panel-heading" style="background: rgb(51, 122, 183);border: rgb(51, 122, 183);">
+                            <h3 class="panel-title">
+                                早餐比吃论
+                            </h3>
+                        </div>
+                        <div class="panel-body" style="background: rgb(222, 236, 223)">
+                            <p>
+                                俗话说：“早餐要吃好，午餐要吃饱，晚餐要吃少。”
+                                早餐距离前一晚餐的时间最长，一般在12小时以上，体内储存的糖原已经消耗殆尽，应及时补充，以免出现血糖过低。血糖浓度低于正常值会出现饥饿感，大脑的兴奋性随之降低，反应迟钝，注意力不能集中。所以，不吃早餐，或者早餐的质和量不够，容易引起能量和营养素的不足，降低上午工作、学习的效率。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="lunch" style="display: none;">
+                <div class="col-md-6">
+                    <h3>午餐时间</h3>
+                    <img src="http://images4.c-ctrip.com/target/tuangou/508/090/775/d136f51b994d4c709f7cfced8f60e746_720_480_s.jpg"
+                         class="img-responsive img-rounded" alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default" style="margin-top: 20px">
+                        <div class="panel-heading" style="background: rgb(51, 122, 183);border: rgb(51, 122, 183);">
+                            <h3 class="panel-title">
+                                “早吃好、中吃饱、晚吃少”
+                            </h3>
+                        </div>
+                        <div class="panel-body" style="background: rgb(222, 236, 223)">
+                            <p>
+                                午餐在一日三餐中是最重要的，为整天提供的能量和营养素都是最重的，分别占了40%；对人在一天中体力和脑力的补充，起了承上启下的作用。所以午餐不只要吃饱，更要吃好。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="dinner" style="display: none">
+                <div class="col-md-6">
+                    <h3>晚餐时间</h3>
+                    <img src="http://photocdn.sohu.com/20090522/Img264119205.jpg" class="img-responsive img-rounded"
+                         alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default" style="margin-top: 20px">
+                        <div class="panel-heading" style="background: rgb(51, 122, 183);border: rgb(51, 122, 183);">
+                            <h3 class="panel-title">
+                                健康晚餐，你我须知
+                            </h3>
+                        </div>
+                        <div class="panel-body" style="background: rgb(222, 236, 223)">
+                            <p>
+                                1、晚餐十分重要，必须吃「好」。如果进食不当，过饱、过晚，都可能对人体健康造成一定的损害。
+                            </p>
+
+                            <p>2、晚餐的时间：晚餐最佳时间是18点左右，晚餐后四小时内别睡觉</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="other" style="display: none">
+                <div class="col-md-12">
+                    <h3><i class=" icon-exclamation-sign icon-2x"></i><span> 还没有到饭点哟。人生毕竟不能全靠吃。</span></h3>
+                </div>
+            </div>
+            <div class="row" id="sleep" style="display: none">
+                <div class="col-md-12">
+                    <h3><i class=" icon-refresh icon-2x"></i><span> 该洗洗睡了，早睡早起身体好！</span></h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--<section class="section section2"></section>-->
+    <section class="section section3">
+        <div class="container">
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://img5.duitang.com/uploads/item/201506/23/20150623200518_KXd2m.jpeg" alt="">
+
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://img5.duitang.com/uploads/item/201506/23/20150623185314_cPZ2C.thumb.700_0.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://cdn.duitang.com/uploads/item/201506/23/20150623185241_RHmPr.thumb.700_0.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://cdn.duitang.com/uploads/item/201506/23/20150623185011_R2GQP.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://img5.duitang.com/uploads/item/201506/23/20150623184951_VzjWe.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://img5.duitang.com/uploads/item/201506/23/20150623185301_B8VsP.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://img4.duitang.com/uploads/item/201506/23/20150623185028_zVajK.thumb.700_0.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://cdn.duitang.com/uploads/item/201506/23/20150623185020_swCzd.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+            <div class="slide">
+                <div class="warp" style="text-align:center">
+                    <span>
+                        <a class="cta button" data-ember-action="363">路痴没关系，会吃就够了</a>
+                    </span>
+                </div>
+                <img src="http://img4.duitang.com/uploads/item/201506/23/20150623184938_jhQBx.jpeg" alt="">
+                <p class="txt">
+                    注：图片来自堆糖网
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<script src="javascript/jquery-2.1.4.min.js"></script>
+<script src="javascript/jquery.easing.min.js"></script>
+<script src="javascript/jquery.fullPage.min.js"></script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/draggabilly.pkgd.min.js"></script>
+<!--拖拽图片-->
+<script src="javascript/elastiStack.js"></script>
+<!--钟表-->
+<script src="javascript/flipclock.js"></script>
+
+<script>
+
+    var clock;
+    $(function () {
+        /*钟表控制js */
+        clock = $('.clock').FlipClock({
+            clockFace: 'TwentyFourHourClock'
+        });
+
+        $('#pagescroll').fullpage({
+            navigation: true
+        });
+
+
+        /*开启拖拽图片*/
+        new ElastiStack(document.getElementById('elasticstack'));
+        /*cannas*/
+        var canvas = document.querySelector('canvas'),
+                ctx = canvas.getContext('2d')
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        ctx.lineWidth = .3;
+        ctx.strokeStyle = (new Color(150)).style;
+
+        var mousePosition = {
+            x: 30 * canvas.width / 100,
+            y: 30 * canvas.height / 100
+        };
+
+        var dots = {
+            nb: 250,
+            distance: 100,
+            d_radius: 150,
+            array: []
+        };
+
+        function colorValue(min) {
+            return Math.floor(Math.random() * 255 + min);
+        }
+
+        function createColorStyle(r, g, b) {
+            return 'rgba(' + r + ',' + g + ',' + b + ', 0.8)';
+        }
+
+        function mixComponents(comp1, weight1, comp2, weight2) {
+            return (comp1 * weight1 + comp2 * weight2) / (weight1 + weight2);
+        }
+
+        function averageColorStyles(dot1, dot2) {
+            var color1 = dot1.color,
+                    color2 = dot2.color;
+
+            var r = mixComponents(color1.r, dot1.radius, color2.r, dot2.radius),
+                    g = mixComponents(color1.g, dot1.radius, color2.g, dot2.radius),
+                    b = mixComponents(color1.b, dot1.radius, color2.b, dot2.radius);
+            return createColorStyle(Math.floor(r), Math.floor(g), Math.floor(b));
+        }
+
+        function Color(min) {
+            min = min || 0;
+            this.r = colorValue(min);
+            this.g = colorValue(min);
+            this.b = colorValue(min);
+            this.style = createColorStyle(this.r, this.g, this.b);
+        }
+
+        function Dot() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+
+            this.vx = -.5 + Math.random();
+            this.vy = -.5 + Math.random();
+
+            this.radius = Math.random() * 2;
+
+            this.color = new Color();
+//            console.log(this);
+        }
+
+        Dot.prototype = {
+            draw: function () {
+                ctx.beginPath();
+                ctx.fillStyle = this.color.style;
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                ctx.fill();
+            }
+        };
+
+        function createDots() {
+            for (i = 0; i < dots.nb; i++) {
+                dots.array.push(new Dot());
+            }
+        }
+
+        function moveDots() {
+            for (i = 0; i < dots.nb; i++) {
+
+                var dot = dots.array[i];
+
+                if (dot.y < 0 || dot.y > canvas.height) {
+                    dot.vx = dot.vx;
+                    dot.vy = -dot.vy;
+                }
+                else if (dot.x < 0 || dot.x > canvas.width) {
+                    dot.vx = -dot.vx;
+                    dot.vy = dot.vy;
+                }
+                dot.x += dot.vx;
+                dot.y += dot.vy;
+            }
+        }
+
+        function connectDots() {
+            for (i = 0; i < dots.nb; i++) {
+                for (j = 0; j < dots.nb; j++) {
+                    i_dot = dots.array[i];
+                    j_dot = dots.array[j];
+
+                    if ((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > -dots.distance && (i_dot.y - j_dot.y) > -dots.distance) {
+                        if ((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > -dots.d_radius && (i_dot.y - mousePosition.y) > -dots.d_radius) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = averageColorStyles(i_dot, j_dot);
+                            ctx.moveTo(i_dot.x, i_dot.y);
+                            ctx.lineTo(j_dot.x, j_dot.y);
+                            ctx.stroke();
+                            ctx.closePath();
+                        }
+                    }
+                }
+            }
+        }
+
+        function drawDots() {
+            for (i = 0; i < dots.nb; i++) {
+                var dot = dots.array[i];
+                dot.draw();
+            }
+        }
+
+        function animateDots() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            moveDots();
+            connectDots();
+            drawDots();
+
+            requestAnimationFrame(animateDots);
+        }
+
+        $('canvas').on('mousemove', function (e) {
+            mousePosition.x = e.pageX;
+            mousePosition.y = e.pageY;
+        });
+
+        $('canvas').on('mouseleave', function (e) {
+            mousePosition.x = canvas.width / 2;
+            mousePosition.y = canvas.height / 2;
+        });
+
+        createDots();
+        requestAnimationFrame(animateDots);
+
+        /*判读当前时间*/
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth() + 1;
+        var day = today.getDate();
+        var hours = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+        var Time = year + "-" + (month < 10 ? "0" + month : month) + "-" + (day < 10 ? "0" + day : day) + " " + hours + ":" + (minute < 10 ? "0" + minute : minute) + ":" + (second < 10 ? "0" + second : second);
+        console.log("现在的时间为：" + Time);
+        console.log("现在的时间hours：" + hours);
+        if (hours > 6 && hours < 10) {
+            $("#lunch").hide();
+            $("#dinner").hide();
+            $("#other").hide();
+            $("#sleep").hide();
+
+            $("#breakfast").show();
+        }
+        else if (hours > 12 && hours < 15) {
+            $("#breakfast").hide();
+            $("#dinner").hide();
+            $("#other").hide();
+            $("#sleep").hide();
+
+            $("#lunch").show();
+        }
+        else if (hours > 16 && hours < 19) {
+            $("#breakfast").hide();
+            $("#lunch").hide();
+            $("#sleep").hide();
+            $("#other").hide();
+
+            $("#dinner").show();
+        }
+        else if(hours >20 && hours < 24){
+            $("#breakfast").hide();
+            $("#lunch").hide();
+            $("#other").hide();
+            $("#dinner").hide();
+
+            $("#sleep").show();
+        }
+        else{
+            $("#breakfast").hide();
+            $("#lunch").hide();
+            $("#sleep").hide();
+            $("#dinner").hide();
+
+            $("#other").show();
+        }
+
+    });
+</script>
+
+</body>
+</html>

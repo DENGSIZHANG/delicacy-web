@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+    <title>中国八大菜系之闽菜</title>
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/easing.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id="body" style="overflow-y: visible;">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <figure class="icon">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="欢迎欢迎热烈欢迎">
+                    </a>
+                </figure>
+                <a href="" class="navbar-brand">八大菜系之<b>闽菜</b></a>
+            </div>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav-link">
+                <li class="active">
+                    <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a></a>
+                </li>
+
+                <!-- <li>
+                    <a href="cooking-culture-of-China.html">
+                        <i class="icon-food"></i> 中国吃文化
+                    </a>
+                </li> -->
+                <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                </li>
+                <li><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div id="eight_btn_section">
+    <div class="container-fluid content">
+        <div class="row eight_btn">
+            <div class="col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Shandong-cuisine.html" type="button" class="btn btn-info typeOfBtn">鲁菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Sichuan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">川菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Jiangsu-Cuisine.html" type="button" class="btn btn-info typeOfBtn">苏菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-4">
+                <a href="Guangzhou-Cuisine.html" type="button" class="btn btn-info typeOfBtn">粤菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Zhejiang-Cuisine.html" type="button" class="btn btn-info typeOfBtn">浙菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Fujian-Cuisine.html" type="button" class="btn btn-info active">闽菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Hunan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">湘菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Anhui-Cuisine.html" type="button" class="btn btn-info typeOfBtn">徽菜</a>
+            </div>
+            <div class="col-md-2 col-sm-2 "></div>
+        </div>
+    </div>
+</div>-->
+<!--页面主体-->
+<div id="food-section" class="Shandong-cuisine">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class='all'>
+                    <div class='box'>
+                        <a href='Shandong-cuisine.html'>
+                            <div class='card bg-01'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 鲁菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Sichuan-Cuisine.html'>
+                            <div class='card bg-02'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 川菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Jiangsu-Cuisine.html'>
+                            <div class='card bg-03'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 苏菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Guangzhou-Cuisine.html'>
+                            <div class='card bg-04'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 粤菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Zhejiang-Cuisine.html'>
+                            <div class='card bg-05'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 浙菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Fujian-Cuisine.html'>
+                            <div class='card bg-06 active'><span class='card-content'><span
+                                    class="glyphicon glyphicon-map-marker"></span> 闽菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Hunan-Cuisine.html'>
+                            <div class='card bg-07'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 湘菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Anhui-Cuisine.html'>
+                            <div class='card bg-08'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 徽菜</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧鲁菜介绍页面-->
+            <div class="col-md-10">
+                <div class="row ">
+                    <ol class="breadcrumb col-md-12">
+                        <li><!--<span class="glyphicon glyphicon-map-marker"></span>--><i class="icon-tint"></i> 当前位置：</li>
+                        <li><a href="home.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="index.html"><i class="icon-coffee"></i> 八大菜系</a></li>
+                        <li class="active">闽菜</li>
+                    </ol>
+                </div>
+                <!--百度百科和主要流派-->
+                <section id="section1">
+                    <h4>（一）百度百科</h4>
+
+                    <p style="text-indent: 2em">
+                        闽菜是中国八大菜系之一，经历了中原汉族文化和当地古越族文化的混合、交流而逐渐形成。闽菜是以福州菜为基础，后又融合闽东、闽南、闽西、闽北、莆仙地方风味菜为主形成的菜系。福建人民经过与海外、特别是南洋群岛人民的长期交往，海外的饮食习俗也逐渐渗透到闽人的饮食生活之中，从而使闽菜成为带有开放特色的一种独特的菜系。闽菜以烹制山珍海味而著称，在色香味形俱佳的基础上，尤以“香”、“味”见长，其清鲜、和醇、荤香、不腻的风格特色，以及汤路广泛的特点，在烹坛园地中独具一席。</p>
+                </section>
+                <section class="row">
+                    <h4 id="section2">（二）主要流派</h4>
+
+                    <div class="col-md-5 col-sm-5" id="div">
+                        <svg id="graph" width="100%">
+                        </svg>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div>
+                            <p style="text-indent: 2em">
+                                闽菜发源于福州，以福州闽菜为代表，狭义闽菜指以福州菜为主体，代表着闽菜的文化与时尚。闽菜最早起源于福建福州闽县，在后来发展中形成福州、闽南、闽西三种流派,即广义闽菜。</p>
+
+                            <p><a data-toggle="tooltip" data-placement="top" class="link"
+                                  title="去百度百科查看详情"
+                                  href="http://baike.baidu.com/link?url=zxwt6A6KbznCAjt_i9R4MuHGR1JfWzPMUprd0ylE54TjFTlCH1KWZUaZN9ywA2hog1O5LP763GiIAepTqASRwa"
+                                  target="_blank"><b>福州菜</b></a>，淡爽清鲜，重酸甜，讲究汤提鲜，擅长各类山珍海味。<br/>
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情"
+                                   href="http://baike.baidu.com/view/2005247.htm"
+                                   target="_blank"><b>闽南菜</b></a>，包括泉州、厦门、漳州一带，讲究作料调味，重鲜香。<br/>
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情" target="_blank" href="http://baike.baidu.com/view/254258.htm">
+                                    <b>闽西菜</b></a>，包括长汀及西南一带地方，偏重咸辣，烹制多为山珍，带有山区风味。
+                            </p>
+
+                            <p>故此，闽菜形成三大特色，一长于红糟调味，二长于制汤，三长于使用糖醋。这一传统即使进入上海，尽染海派风味后，依然未变。</p>
+                        </div>
+                    </div>
+                </section>
+                <!--发展历史-->
+                <section id="section3">
+                    <h4>（三）发展历史</h4>
+
+                    <div class="panel panel-default" id="history-info">
+                        <div class="panel-body">
+                            <table class="table table-condensed">
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-2 first-Tr" id="section3-1"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>两晋时期</p>
+                                    </td>
+                                    <td class="first-Tr"><p>
+                                        早在两晋、南北朝时期的“永嘉之乱”以后，大批中原衣冠士族入闽，带来了中原先进的科技文化，与闽地古越文化的混合和交流，促进了当地的发展。</p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-2"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>晚唐五代
+                                    </p></td>
+                                    <td><p>
+                                        河南光洲固始的王审知兄弟带兵入闽建立“闽国”，对福建饮食文化的进一步开发、繁荣，产生了积极的促进作用。如，在唐代以前中原地区已开始使用红曲作为烹饪的作料。唐朝徐坚的《初学记》云：“瓜州红曲，参糅相半，软滑膏润，入口流散。”这种红曲由中原移民带入福建后，由于大量使用红曲，红色也就成为闽菜烹饪美学中的主要色调，有特殊香味的红色酒糟也成了烹饪时常用的作料，红糟鱼、红糟鸡、红糟肉等都是闽菜主要的菜肴，“红曲烹调”成为福州、厦门、泉州先后对外通商，四方商贾云集，文化交流日益频繁，海外的技艺也相随传入。闽菜在继承传统技艺的基础上，博采各路菜肴之精华，对粗糙、滑腻的习俗，加以调整变易，逐渐朝着精细、清淡、典雅的品格演变，以至发展成为格调甚高的闽菜体系。
+
+                                    </p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-3"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>清末民初
+                                    </p></td>
+                                    <td><p>
+                                        福建先后涌现出一批富有地方特色的名店和真才实艺的名厨。当时福建是对外贸易的一个重要区域，福州和厦门一度出现了一种畸形的市场繁荣景象。为了满足官僚士绅、买办阶层等上流社会应酬的需要，福州出现了“聚春园”、“惠如鲈”、“广裕楼”、“嘉宾”、“另有天”，厦门出现了“南轩”、“乐琼林”、“全福楼”、“双全”等多家名菜馆。这些菜馆或以满汉席著称，或以官场菜见长，或以地方风味享有盛誉各有擅长，促进了地方风味的形成和不断完善。
+                                    </p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-4"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>如今</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            福州菜成为闽菜主流。其菜肴特点是清爽、鲜嫩、淡雅、汤菜居多。均鲜明地体现了山乡的传统食俗和浓郁的地方色彩。
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!--经典菜品-->
+                <section id="section4">
+                    <!--<div class="col-md-12">-->
+                    <h4>（四）经典菜品</h4>
+
+                    <div class="main-posts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="device" class="gridalicious">
+                                    <div class="galcolumn">
+                                        <!--菜品图片展示-1-->
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Fujian-cuisine/1.jpg" alt="佛跳墙">
+
+                                                <div class="title-over">
+                                                    <h4><a>佛跳墙</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=UneWFDu0dJuP94YwQNoiIJhd5EwATGJ3E20GtuyCmS4dcdMsCDKBacHkH1E65_UKVKV_UiPX_FQuHd0P5P-IsgYPnthT6IrbIHXT6A7gBey"
+                                                                target="_blank">佛跳墙</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            佛跳墙，又名满坛香、福寿全，是福建福州的汉族名菜，属闽菜系。相传，它是在清道光年间由福州聚春园菜馆老板郑春发研制出来的。佛跳墙富含营养，可促进发育，美容，延缓衰老，增强免疫力，乃进补佳品。
+                                                            1965年和1980年分别在广州南园和香港，以烹制佛跳墙为主的福州菜引起轰动，在世界各地掀起了佛跳墙热。各地华侨开设的餐馆，多用自称正宗的佛跳墙菜，招徕顾客。佛跳墙还接待过西哈努克亲王、美国总统里根、英国女王伊丽莎白等国家元首。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Fujian-cuisine/2.jpg" alt="盐水虾">
+
+                                                <div class="title-over">
+                                                    <h4><a>盐水虾</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=NfFhf26q_3hYQS3L7-vyiYElGJrS8awN71YQYj4B8wO8l2ejkCEQe5obNuutDUiq9UqMT88DC1MevM9ucN_gnq"
+                                                                target="_blank">盐水虾</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            盐水虾属江苏菜，具有鲜红美观，鲜嫩清口的特点。虾肉具有味道鲜美、营养丰富的特点，其中钙的含量为各种动植物食品之冠，特别适宜老年人和儿童食用。还含微量元素硒，能预防癌症。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Fujian-cuisine/3.jpg" alt="醉排骨">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">醉排骨</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/87954.htm"
+                                                                target="_blank">醉排骨</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            醉排骨是福建省福州地区的汉族传统名菜。每逢过年过节，福州几乎家家户户都会做这道菜。因其香味浓郁，令人陶醉，故名之，桔红色，酸甜微辣，外脆里鲜嫩。福州无人不知无人不爱，在餐桌上可以说是被秒杀的一道菜。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Fujian-cuisine/4.jpg" alt="肝花">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">肝花</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/814087.htm"
+                                                                target="_blank">肝花</a></h4>
+
+                                                        <p>客家地区著名风味小吃，主要分布在福建省长汀县周边。由甘薯粉和猪肝制成。特点是色泽金黄，外酥内软，食而不腻。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Fujian-cuisine/5.jpg" alt="八宝红鲟饭">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">八宝红鲟饭</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/1523208.htm"
+                                                                target="_blank">八宝红鲟饭</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            八宝红鲟饭是一道福建的汉族传统名点，系福州传统佳肴，属于闽菜。以红鲟为主附于鸭肉肫等八种原料与糯米一起蒸熟而得名。它具有治疗营养不良、调理、健脾开胃、调理、清热去火调理的功效。这道味口味咸鲜味，软、糯、香、醇，独具风味。主要用料是糯米和青蟹。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Fujian-cuisine/6.jpg" alt="莆田卤面">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">莆田卤面</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/1425187.htm"
+                                                                target="_blank">莆田卤面</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            莆田卤面是福建莆田的一道汉族美食，与兴化炒米粉、炝肉、荔枝肉、海蛎煎、西天尾扁食、泗粉、
+                                                            菜头饼、焖豆腐、生煎包都是莆田较为出名的美食，莆田卤面更是莆田历来款待亲朋给好友，酒宴必不可少的一道主菜。
+                                                            莆田卤面又以江口卤面最为出名，一般用于重要来宾接待，被称为地道的莆田卤面。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-12 more-info">-->
+                                <!--<a type="button" class="btn btn-info"-->
+                                <!--href="http://www.360doc.com/content/14/0929/01/18960088_413124870.shtml"-->
+                                <!--target="_blank">查看十大经典鲁菜</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--右侧锚点介绍-->
+            <div class="col-md-1">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked left-nav">
+                        <li class="active"><a href="#body">百度百科</a></li>
+                        <li><a href="#section2">主要流派</a></li>
+                        <li><a href="#section3">发展历史</a></li>
+                        <li><a href="#section4">经典菜品</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--返回顶部按钮-->
+<div class="footer-section">
+    <div class="container">
+        <a href="javascript:void(0)" id="toTop" style="display: none;"></a>
+    </div>
+</div>
+<script type="text/javascript" src="javascript/d3.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.grid-a-licious.min.js"></script>
+<script type="text/javascript" src="javascript/global.js"></script>
+<!--瀑布流加载图片-->
+
+<script type="text/javascript">
+    $(function () {
+        ///闽菜的成份结构
+        var svg = d3.select("#graph");
+        var s = document.getElementById("div").clientWidth;
+        var width = s;
+        console.log("宽度" + s);
+        var height = 320;
+        var nodes = [{name: "闽菜"},
+            {name: "福州菜"},
+            {name: "闽南菜"},
+            {name: "闽西菜"}
+        ];
+        var edges = [{source: 0, target: 1},
+            {source: 0, target: 2},
+            {source: 0, target: 3}
+        ];
+        var force = d3.layout.force()
+                .nodes(nodes)           //设定节点数组
+                .links(edges)           //设定连线数组
+                .size([width, height])   //设定作用范围
+                .linkDistance(150)       //设定连线的距离
+                .charge(-400);          //设定节点的电荷数
+        force.start();//开启布局计算
+        console.log(nodes);
+        console.log(edges);
+        var color = d3.scale.category20();
+
+        //绘制连线
+        var lines = svg.selectAll(".forceLine")
+                .data(edges)
+                .enter()
+                .append("line")
+                .attr("class", "forceLine")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 1);
+        //绘制节点
+        var circles = svg.selectAll(".forceCircles")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "forceCircle")
+                .attr("r", 35)
+                .style("fill", function (d, i) {
+                    return color(i);
+                })
+                .call(force.drag);//允许拖动
+        //绘制文字
+        var texts = svg.selectAll(".forceText")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("class", "forceText")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("dx", "-1.2em")
+                .attr("dy", ".3em")
+                .text(function (d) {
+                    return d.name;
+                });
+
+        force.on("tick", function () {
+            //更新连线的终点坐标
+            lines.attr("x1", function (d) {
+                return d.source.x;
+            });
+            lines.attr("y1", function (d) {
+                return d.source.y;
+            });
+            lines.attr("x2", function (d) {
+                return d.target.x;
+            });
+            lines.attr("y2", function (d) {
+                return d.target.y;
+            });
+            //更新节点坐标
+            circles.attr("cx", function (d) {
+                return d.x;
+            });
+            circles.attr("cy", function (d) {
+                return d.y;
+            });
+            //更新文字节点的坐标
+            texts.attr("x", function (d) {
+                return d.x;
+            });
+            texts.attr("y", function (d) {
+                return d.y;
+            });
+        });
+    });
+</script>
+</body>
+</html>

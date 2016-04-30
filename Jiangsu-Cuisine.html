@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+    <title>中国八大菜系之苏菜</title>
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/easing.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id="body" style="overflow-y: visible;">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <figure class="icon">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="欢迎欢迎热烈欢迎">
+                    </a>
+                </figure>
+                <a href="Jiangsu-Cuisine.html" class="navbar-brand">八大菜系之<b>苏菜</b></a>
+            </div>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav-link">
+                <li class="active">
+                    <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a></a>
+                </li>
+
+                <!-- <li>
+                    <a href="cooking-culture-of-China.html">
+                        <i class="icon-food"></i> 中国吃文化
+                    </a>
+                </li> -->
+                <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                </li>
+                <li><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<div id="eight_btn_section">
+    <div class="container-fluid content">
+        <div class="row eight_btn">
+            <div class="col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Shandong-cuisine.html" type="button" class="btn btn-info typeOfBtn">鲁菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Sichuan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">川菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Jiangsu-Cuisine.html" type="button" class="btn btn-info active">苏菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-4">
+                <a href="Guangzhou-Cuisine.html" type="button" class="btn btn-info typeOfBtn">粤菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Zhejiang-Cuisine.html" type="button" class="btn btn-info typeOfBtn">浙菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Fujian-Cuisine.html" type="button" class="btn btn-info typeOfBtn">闽菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Hunan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">湘菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Anhui-Cuisine.html" type="button" class="btn btn-info typeOfBtn">徽菜</a>
+            </div>
+            <div class="col-md-2 col-sm-2 "></div>
+        </div>
+    </div>
+</div>-->
+<!--页面主体-->
+<div id="food-section" class="Jiangsu-cuisine">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class='all'>
+                    <div class='box'>
+                        <a href='Shandong-cuisine.html'>
+                            <div class='card bg-01'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 鲁菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Sichuan-Cuisine.html'>
+                            <div class='card bg-02'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 川菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Jiangsu-Cuisine.html'>
+                            <div class='card bg-03 active'><span class='card-content'><span
+                                    class="glyphicon glyphicon-map-marker"></span> 苏菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Guangzhou-Cuisine.html'>
+                            <div class='card bg-04'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 粤菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Zhejiang-Cuisine.html'>
+                            <div class='card bg-05'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 浙菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Fujian-Cuisine.html'>
+                            <div class='card bg-06'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 闽菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Hunan-Cuisine.html'>
+                            <div class='card bg-07'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 湘菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Anhui-Cuisine.html'>
+                            <div class='card bg-08'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 徽菜</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧鲁菜介绍页面-->
+            <div class="col-md-10">
+                <div class="row ">
+                    <ol class="breadcrumb col-md-12">
+                        <li><!--<span class="glyphicon glyphicon-map-marker"></span>--><i class="icon-tint"></i> 当前位置：</li>
+                        <li><a href="home.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="index.html"><i class="icon-coffee"></i> 八大菜系</a></li>
+                        <li class="active">苏菜</li>
+                    </ol>
+                </div>
+                <!--百度百科和主要流派-->
+                <section id="section1">
+                    <h4>（一）百度百科</h4>
+
+                    <p>
+                        江苏菜，中国汉族八大菜系之一，简称苏菜。江苏菜起源于二千多年前，当时吴人善制炙鱼、蒸鱼和鱼片。一千多年前，鸭已为金陵美食。苏菜擅长炖、焖、蒸、炒，重视调汤，保持菜的原汁，风味清鲜，浓而不腻，淡而不薄，酥松脱骨而不失其形，滑嫩爽脆而不失其味。</p>
+                </section>
+                <section class="row">
+                    <h4 id="section2">（二）主要流派</h4>
+
+                    <div class="col-md-5 col-sm-5" id="div">
+                        <svg id="graph" width="100%">
+                        </svg>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div>
+                            <p><a data-toggle="tooltip" data-placement="top" class="link"
+                                  title="去百度百科查看详情"
+                                  href="http://baike.baidu.com/link?url=pEuHvlkNT8V3kL7nJCPIScgo7PGvWviNJyJKUR4iGIirrTeketwklaKT9T9-pQrmidzWaY1_c1NJ5vSHPF8Mb2jHmvNfNE_t0ms4DcUgIZe#4_1"
+                                  target="_blank"><b>金陵菜</b></a>，又称“京苏菜”，是指以南京为中心，一直延伸到江西九江的菜系。
+                                金陵菜起源于先秦，隋唐已负盛名，至明清成流派。金陵菜原料多以水产为主，注重鲜活，刀功精细，善用炖、焖
+                                、烤、煨等烹调方法，口味平和，鲜香酥嫩。菜品细致精美，格调高雅。金陵菜讲究刀工，擅长火功，富于变化的技法以及南北皆宜的口味特色。
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情"
+                                   href="http://baike.baidu.com/link?url=pEuHvlkNT8V3kL7nJCPIScgo7PGvWviNJyJKUR4iGIirrTeketwklaKT9T9-pQrmidzWaY1_c1NJ5vSHPF8Mb2jHmvNfNE_t0ms4DcUgIZe#4_3"
+                                   target="_blank"><b>淮扬菜</b></a>，十分讲究刀工，刀功比较精细，尤以瓜雕享誉四方。菜品形态精致，滋味醇和；在烹饪上则善用火候，讲究火功，擅长炖、焖、煨、焐、蒸、烧、炒；原料多以水产为主，注重鲜活，口味平和，清鲜而略带甜味。
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情" target="_blank" href=""><b>苏锡菜</b></a>，发源于江苏省苏州、无锡地区，曾流行于东到上海，西到常州的江南地区。苏锡菜在汉族民间有时又被细分为苏帮菜（苏州菜）和锡帮菜（无锡菜），但由於这两个菜系的风味和烹饪方式极为接近，故通常统称为苏锡菜。
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情" target="_blank" href=""><b>徐海菜</b></a>，徐海菜起源于秦汉时期，是自江苏省徐州向东沿陇海铁路至连云港一带地方汉族风味菜（连云港古称海州，故这一区域，称为徐海）。
+                                徐海菜原近齐鲁风味，肉食五畜俱用，水产以海味取胜。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--发展历史-->
+                <section id="section3">
+                    <h4>（三）发展历史</h4>
+
+                    <div class="panel panel-default" id="history-info">
+                        <div class="panel-body">
+                            <table class="table table-condensed">
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-2 first-Tr" id="section3-1"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>一千年之前</p>
+                                    </td>
+                                    <td class="first-Tr"><p>
+                                        吴人即善制炙鱼、蒸鱼和鱼片。鸭已为金陵美食</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-2"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>南宋时期
+                                    </p></td>
+                                    <td><p>
+                                        苏菜到达第一个高峰，苏菜和浙菜同为“南食”的两大台柱。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-3"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>唐宋元金
+                                    </p></td>
+                                    <td><p>
+                                        宋代以来，苏菜的口味有较大的变化。原来南人菜咸而北方菜甜，江南进贡到长安、洛阳的鱼蟹要加糖加蜜。宋室南渡杭城，中原大批士大夫南下，带来了中原风味的影响。此外唐宋时期，特别是金元以来，伊斯兰教徒到江苏者日多，苏菜系又受清真菜的影响，烹饪更为丰富多彩。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-4"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>清代
+                                    </p></td>
+                                    <td><p>
+                                        苏菜流行于全国，相当于川菜、粤菜的地位。苏菜中的一支——淮扬菜系曾为宫廷菜，至2013年国宴中的大多数菜肴仍属于淮扬菜。因此，淮扬菜亦称国菜。苏州菜系历史上也十分流行。乾隆帝南巡的时候，曾经到苏州的得月楼做客，尝到江南美味后，非常高兴，口称苏州为天下第一食府。</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <!--经典菜品-->
+                <section id="section4">
+                    <!--<div class="col-md-12">-->
+                    <h4>（四）经典菜品</h4>
+
+                    <div class="main-posts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="device" class="gridalicious">
+                                    <div class="galcolumn">
+                                        <!--菜品图片展示-1-->
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Jiangsu-cuisine/1.jpg" alt="霸王别姬">
+
+                                                <div class="title-over">
+                                                    <h4><a>霸王别姬</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/subview/8506/5395586.htm#viewPageContent"
+                                                                target="_blank">霸王别姬</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            原名龙凤烩。项羽称霸王都彭城（徐州）举行开国大典时，为盛典备有"龙凤宴"。相传是虞姬娘娘亲自设计的。"龙凤烩"即"龙凤宴"中的主要大件。其料用"乌龟"（龟属水族，龙系水族之长）与雉（雉属羽族，凤系羽族之长），故引申为龙凤相会得名。现以鳖、鸡取代龟、雉。这道菜经世代相传至今，乃徐州名馔，成为喜庆宴会上不可缺少的大菜。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Jiangsu-cuisine/2.jpg" alt="狮子头">
+
+                                                <div class="title-over">
+                                                    <h4><a>狮子头</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=JLUG5H0eQ-F9mcGmOGSwygjrVcTTu26hiJUrUKU_7z8ZLwjAh2EnecyKEfuATiWUb2Ijuie_U7pDG9B3dfdvqskWgd1tGRTOiCDREb7R3tO"
+                                                                target="_blank">狮子头</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            相传始于隋朝。隋炀帝到扬州观琼花后，对扬州的万松山、金钱墩、象牙林、葵花岗四大名景十分留恋。回到行宫命御厨以上述四景为题，制作四道佳肴，即松鼠鳜鱼、金钱虾饼、象牙鸡条、葵花献肉。皇帝赞赏不已，赐宴群臣。从此，这些菜传遍大江南北。到了唐朝，郇国公府中名厨受“葵花献肉”的启示，将巨大的肉圆制成葵花状，造型别致，犹如雄狮之头，可红烧，也可清炖；清炖较嫩，加入蟹粉后成为“清炖蟹粉狮子头”，盛行于镇扬地区。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Jiangsu-cuisine/3.jpg" alt="金陵盐水鸭">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">金陵盐水鸭</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/357824.htm"
+                                                                target="_blank">金陵盐水鸭</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            南京名菜，当地盛行以鸭制肴，曾有“金陵鸭馔甲天下”之说。明朝建都金陵后，先是出现金陵烤鸭，接着就是金陵盐水鸭。此菜用当年八月中秋时的“桂花鸭”为原料，用热盐、清卤水复腌后，取出挂荫凉处吹干，食用时在水中煮熟，皮白肉红，香味足，鲜嫩味美，风味独特，同明末出现的“板鸭”齐名，畅销大江南北。另有“炖菜核”相传是清代有位钦差大臣，住南京万竹园，天天吃青菜而不厌；炖菜核是由矮脚黄菜心炖制而成，美味可口，别提多好吃了！</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Jiangsu-cuisine/4.jpg" alt="三套鸭">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">三套鸭</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/133595.htm"
+                                                                target="_blank">三套鸭</a></h4>
+
+                                                        <p>
+                                                            三套鸭是江苏省扬州和高邮地区的一道汉族传统名菜。“三套鸭”家鸭肥嫩，野鸭喷香，菜鸽细酥，滋味极佳。有人赞美此菜具有“闻香下马，知味停车”的魅力。扬州菜馆的厨师将野鸭去骨填入家鸭内，菜鸽去骨再填入野鸭内，创制了“三套鸭”。因其风味独特，不久便闻名全国。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Jiangsu-cuisine/5.jpg" alt="羊方藏鱼">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">羊方藏鱼</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/132457.htm"
+                                                                target="_blank">羊方藏鱼</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            羊方藏鱼属苏菜系，在中国汉族古典菜中被称为第一名菜，至今已有4300年历史。“羊方藏鱼”这道最古老的名菜至今在江苏徐州一些饭馆中流传，有人把它做成熟食品。“羊方藏鱼”现代也叫套菜、二套菜，其做法是将鱼置于割开的大块羊肉中，加上调料同烹，蒸炖皆可，其味鲜美无比。因为鱼鲜羊鲜合成一体，其味更鲜。羊肉酥烂味香，内藏鱼肉鲜嫩。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Jiangsu-cuisine/6.jpg" alt="松鼠鳜鱼">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">松鼠鳜鱼</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/124448.htm"
+                                                                target="_blank">松鼠鳜鱼</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            “松鼠鳜鱼”是江苏苏州地区的汉族传统名菜在江南各地一直将其列作宴席上的上品佳肴。用鳜鱼制菜各地早有，一般以清蒸或红烧为主，而制做形似松鼠的鳜鱼菜肴则首先是苏州地区。相传清代乾隆皇帝下江南时，曾微服至苏州松鹤楼菜馆用膳，厨师用鲤鱼出骨，在鱼肉上刻花纹，加调味稍腌后，拖上蛋黄糊，入热油锅嫩炸成熟后，浇上熬热的糖醋卤汁，形状似鼠，外脆里嫩，酸甜可口。 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-12 more-info">-->
+                                <!--<a type="button" class="btn btn-info"-->
+                                <!--href="http://www.360doc.com/content/14/0929/01/18960088_413124870.shtml"-->
+                                <!--target="_blank">查看十大经典苏菜</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </section>
+            </div>
+            <!--右侧锚点介绍-->
+            <div class="col-md-1">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked left-nav">
+                        <li class="active"><a href="#body">百度百科</a></li>
+                        <li><a href="#section2">主要流派</a></li>
+                        <li><a href="#section3">发展历史</a></li>
+                        <li><a href="#section4">经典菜品</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--返回顶部按钮-->
+<div class="footer-section">
+    <div class="container">
+        <a href="javascript:void(0)" id="toTop" style="display: none;"></a>
+    </div>
+</div>
+<script type="text/javascript" src="javascript/d3.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.grid-a-licious.min.js"></script>
+<script type="text/javascript" src="javascript/global.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        ///苏的成份结构
+        var svg = d3.select("#graph");
+        var s = document.getElementById("div").clientWidth;
+        var width = s;
+        console.log("宽度" + s);
+        var height = 320;
+        var nodes = [{name: "江苏菜"},
+            {name: "金陵菜"},
+            {name: "淮扬菜"},
+            {name: "苏锡菜"},
+            {name: "徐海菜"}
+        ];
+        var edges = [{source: 0, target: 1},
+            {source: 0, target: 2},
+            {source: 0, target: 3},
+            {source: 0, target: 4}
+        ];
+        var force = d3.layout.force()
+                .nodes(nodes)           //设定节点数组
+                .links(edges)           //设定连线数组
+                .size([width, height])   //设定作用范围
+                .linkDistance(150)       //设定连线的距离
+                .charge(-400);          //设定节点的电荷数
+        force.start();//开启布局计算
+        console.log(nodes);
+        console.log(edges);
+        var color = d3.scale.category20();
+
+        //绘制连线
+        var lines = svg.selectAll(".forceLine")
+                .data(edges)
+                .enter()
+                .append("line")
+                .attr("class", "forceLine")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 1);
+        //绘制节点
+        var circles = svg.selectAll(".forceCircles")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "forceCircle")
+                .attr("r", 35)
+                .style("fill", function (d, i) {
+                    return color(i);
+                })
+                .call(force.drag);//允许拖动
+        //绘制文字
+        var texts = svg.selectAll(".forceText")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("class", "forceText")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("dx", "-1.2em")
+                .attr("dy", ".3em")
+                .text(function (d) {
+                    return d.name;
+                });
+
+        force.on("tick", function () {
+            //更新连线的终点坐标
+            lines.attr("x1", function (d) {
+                return d.source.x;
+            });
+            lines.attr("y1", function (d) {
+                return d.source.y;
+            });
+            lines.attr("x2", function (d) {
+                return d.target.x;
+            });
+            lines.attr("y2", function (d) {
+                return d.target.y;
+            });
+            //更新节点坐标
+            circles.attr("cx", function (d) {
+                return d.x;
+            });
+            circles.attr("cy", function (d) {
+                return d.y;
+            });
+            //更新文字节点的坐标
+            texts.attr("x", function (d) {
+                return d.x;
+            });
+            texts.attr("y", function (d) {
+                return d.y;
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

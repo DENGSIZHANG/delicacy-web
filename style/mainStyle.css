@@ -1,0 +1,1752 @@
+/*global style*/
+body {
+    font-family: "Alright Sans LP", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Source Han Sans SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi MicroHei", sans-serif;
+    font-size: 14px;
+    position: relative; /*为右侧的锚点定位做准备*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-weight: 300;
+    background: rgb(222, 236, 223);
+}
+
+p {
+    color: rgb(135, 141, 154);
+    line-height: 28px;
+}
+
+a:hover,
+a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+/*
+global全局 导航栏
+*/
+
+/*logo 图片*/
+.logo .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f65a5b;
+    margin: 7px 10px;
+    text-align: center;
+    float: left;
+}
+
+.logo .icon img {
+    width: 85%;
+    z-index: 100;
+    transition: all 0.3s ease 0s;
+}
+
+.logo .icon:hover img {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.logo .icon:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+/*导航栏阴影*/
+.navbar {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: rgb(62, 152, 197);
+    border-bottom: 3px solid rgb(62, 152, 197);
+}
+
+.nav > li:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.nav-link li a {
+    line-height: 23px;
+    height: 54px;
+}
+
+.nav-link a:focus::after, .nav-link a:hover::after {
+    height: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.nav-link a:after {
+    position: absolute;
+    top: 51px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(62, 152, 197);
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .5s, opacity .5s, -webkit-transform .5s;
+    transition: height .5s, opacity .5s, transform .5s;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px)
+}
+
+/*
+home  page主页
+*/
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container > header {
+    margin: 0 auto;
+    padding-top: 2em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.container > header h1 {
+    font-size: 2.625em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 300;
+}
+
+.container > header span {
+    display: block;
+    font-size: 63%;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 0.2em 0 0.6em 0.1em;
+}
+
+.container > header span a {
+    color: #fff;
+}
+
+.container > header span a:hover {
+    opacity: 0.7;
+}
+
+/* 可拖拽style样式 */
+.codrops-top {
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 0.7em;
+    line-height: 2.2;
+    font-weight: 700;
+}
+
+.codrops-top a {
+    text-decoration: none;
+    padding: 0 1em;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+
+.codrops-top a:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+}
+
+.codrops-top span.right {
+    float: right;
+}
+
+.codrops-top span.right a {
+    float: left;
+    display: block;
+}
+
+.codrops-icon:before {
+    font-family: 'codropsicons';
+    margin: 0 4px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+    content: "\e001";
+}
+
+.codrops-icon-prev:before {
+    content: "\e004";
+}
+
+.related {
+    text-align: center;
+    font-size: 1.6em;
+    padding: 2em 0;
+}
+
+.related a {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.related a span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 25em) {
+
+    .codrops-icon span {
+        display: none;
+    }
+
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elasticstack {
+    position: relative;
+    margin: 40px auto;
+    padding: 0;
+    width: 340px;
+    height: 380px;
+    list-style: none;
+    -webkit-perspective: 1000px;
+    -webkit-perspective-origin: 50% 150%;
+    perspective: 1000px;
+    perspective-origin: 50% 150%;
+}
+
+.no-js .elasticstack {
+    max-width: 1090px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.elasticstack li {
+    position: absolute;
+    z-index: 1;
+    width: 340px;
+    height: 380px;
+    border-width: 60px 20px;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background: rgb(94, 103, 114);
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, -180px);
+    transform: translate3d(0, 0, -180px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+@media (max-width: 768px) {
+    .elasticstack li{
+        width: 240px;
+        height: 280px;
+        border-width: 60px 10px;
+    }
+    .elasticstack{
+        margin: 40px 40px;
+    }
+}
+
+.no-js .elasticstack li {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    margin: 10px;
+    cursor: default;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.elasticstack li img {
+    display: block;
+}
+
+.elasticstack li h5 {
+    margin: 0 5px;
+    color: #143f51;
+    height: 60px;
+    text-align: right;
+    font-size: 1.4em;
+    font-family: "Sacramento", cursive;
+    line-height: 60px;
+}
+
+.elasticstack li.animate {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.elasticstack li.move-back {
+    /* http://matthewlein.com/ceaser/ */
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1); /* older webkit */
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+}
+
+/*home page下的导航栏navbar样式*/
+#header .navbar {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 0px;
+    box-shadow: none;
+}
+
+#header .header {
+    padding: 8px 15px;
+}
+
+#header .logo {
+    margin-left: 15px;
+}
+
+#header .navbar-nav {
+    text-align: right;
+    /*margin-left: 180px;*/
+    /*max-width: 150px;*/
+    /*background-color: rgb(255, 0, 0);*/
+}
+
+#header .navg-item {
+    /*padding-right: 70px;*/
+}
+
+#header .navbar li:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#header #logo a {
+    color: rgb(255, 255, 255);
+    opacity: .7;
+}
+
+#header .navbar-default .navg-item .navg-link {
+    color: rgb(255, 255, 255);
+    opacity: .5;
+    font-weight: 200;
+}
+
+#header .navbar-default .navg-item:hover .navg-link {
+    color: #ffffff;
+    opacity: 1;
+}
+
+#header .navbar-default .navbar-collapse {
+    border-width: 0px;
+}
+
+header h2 {
+    color: rgb(255, 255, 255);
+}
+
+/*section 1*/
+a, a:hover, a:visited, a:link {
+    text-decoration: none;
+}
+
+#pagescroll .section1 {
+    background-image: url(../images/banner1.jpg);
+    background-size: cover;
+}
+
+#pagescroll .section .inner {
+    height: 100%;
+    width: 100%;
+    line-height: 1.7em;
+    text-align: center;
+    display: table;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20px;
+}
+
+#pagescroll .section .main {
+    margin-top: 255px;
+}
+
+#pagescroll .section .summary {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 1em 0;
+    line-height: 1.7em;
+}
+
+#pagescroll .section .button {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    border: 2px solid rgba(255, 255, 255, .3);
+    border: 2px solid #fff \9;
+    border-radius: 10px;
+    padding: 0 36px;
+    color: rgba(255, 255, 255, .6);
+    color: #fff \9;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#pagescroll .section .casually {
+    background: #136ec2;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#pagescroll .section .button:hover {
+    border-color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .9);
+}
+
+#elasticstack img {
+    width: 100%;
+    height: 100%;
+}
+
+#pagescroll .section2 {
+    background-color: rgb(75, 125, 116);
+}
+
+/*
+section3 page
+*/
+
+#pagescroll .section3 {
+    background-image: url(http://i-7.vcimg.com/trim/6d95348225aa3392e82e63ad26ae934f197113/trim.jpg);
+    background-size: cover;
+}
+#pagescroll .section3 span .cta{
+    background-color: rgb(255, 97, 72);
+    /*background: rgb(255, 103, 0);*/
+    box-shadow: 0 4px 0 rgb(216, 85, 72);
+    color: rgb(255, 255, 255);
+}
+
+
+/*左右滑动控制按钮*/
+#pagescroll .section3 .fp-prev {
+    left: 5%;
+    width: 41px;
+    height: 69px;
+    background: url(../images/icon-slides.png) no-repeat -84px 50%;
+}
+
+#pagescroll .section3 .fp-next {
+    right: 5%;
+    width: 41px;
+    height: 69px;
+    background: url(../images/icon-slides.png) no-repeat -125px 50%;
+}
+
+#pagescroll .section3 .fp-prev:hover {
+    background-position: 0px 50%;
+}
+
+#pagescroll .section3 .fp-next:hover {
+    background-position: -43px 50%;
+}
+
+#pagescroll .section3 img {
+    display: block;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
+    margin: 2% auto;
+    margin-bottom: 0px;
+    width: 600px;
+    height: 470px;
+}
+
+
+#pagescroll .section3 .txt {
+    line-height: 30px;
+    text-align: center;
+    color: #a94442;
+    font-size: 16px;
+}
+
+#pagescroll .section4 {
+    /*background-color: rgb(124, 189, 157);*/
+    background-color: rgb(23, 24, 28);
+}
+#pagescroll .section5{
+    background-color: rgb(190, 116, 103);
+}
+
+#pagescroll .section5 .container .row .col-md-12{
+    margin: 0 auto;
+}
+#pagescroll .section5 h3{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #pagescroll .section5 img{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    #pagescroll .section3 img{
+        width: 100%;
+        height: 75%;
+        margin-top: 20px;
+    }
+    .warp{
+        margin-top: 20px;
+    }
+    #pagescroll .section .button{
+        font-size: 14px;
+        padding: 0px 16px;
+    }
+    #pagescroll .section .inner{
+        top: -90px;
+    }
+}
+
+/*index page布局*/
+/*body主要内容部分*/
+a.link {
+    text-align: center;
+    text-decoration: none;
+}
+
+#home {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*地图主体*/
+#home .map_content {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    background: url(../images/banner1.jpg) no-repeat center;
+}
+
+/*.map_content:hover{*/
+/*box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);*/
+/*margin-top: -5px;*/
+/*-webkit-transition: all 0.3s ease-in-out;*/
+/*-moz-transition: all 0.3s ease-in-out;*/
+/*-o-transition: all 0.3s ease-in-out;*/
+/*transition: all 0.3s ease-in-out;*/
+/*}*/
+
+#home .information_content {
+    margin-top: 10px;
+    color: rgb(135, 141, 154);
+}
+
+/*地图标题*/
+#home #map_title {
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*放置地图容器的高度*/
+#home #mainMap {
+    height: 513px;
+}
+
+/*简介菜系的表格*/
+#home .info_table {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+#home .table-header > th {
+    text-align: center;
+}
+
+#home .panel-body {
+    padding-top: 20px;
+}
+
+/*菜系名字前面的三角动画*/
+.index-arr {
+    width: 23px;
+    height: 23px;
+    display: inline-flex;
+    margin-right: 6px;
+    margin-left: -15px;
+    background: url(../images/index-sp.png) no-repeat;
+    cursor: pointer;
+}
+
+.index-arr {
+    -webkit-animation: index-arr .8s 1s infinite linear normal both;
+    -moz-animation: index-arr .8s 1s infinite linear normal both;
+}
+
+@-webkit-keyframes index-arr {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(5px);
+    }
+}
+
+@-moz-keyframes index-arr {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(5px);
+    }
+}
+
+/*弹出框*/
+.form-horizontal .control-label {
+    line-height: 42px;
+    padding-top: 0px;
+    text-align: right;
+}
+
+/*8个控制按钮*/
+.typeOfBtn {
+    height: 85px;
+    line-height: 85px;
+}
+
+.eight_btn div {
+    margin: 10px 0px 20px 0px;
+}
+
+.eight_btn > div > a {
+    line-height: 50px;
+}
+
+.eight_btn .typeOfBtn {
+    background: #FF4081;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.3) inset;
+    cursor: pointer;
+}
+
+/*鼠标滑动按钮和当前活动按钮  样式*/
+.eight_btn .typeOfBtn:hover, .btn-info.active {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: rgb(49, 176, 213);
+    border-color: rgb(38, 154, 188);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) inset, 0 3px 6px rgba(0, 0, 0, 0.16), 0 5px 11px rgba(0, 0, 0, 0.23);
+}
+
+.eight_btn .typeOfBtn:hover {
+    -ms-transform: rotate(720deg) scale(1.2);
+    -webkit-transform: rotate(720deg) scale(1.2);
+    transform: rotate(720deg) scale(1.2);
+}
+
+/*d3动画模型关系*/
+#graph {
+    background-color: #1f6377;
+    height: 320px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) inset, 0 3px 6px rgba(0, 0, 0, 0.16), 0 5px 11px rgba(0, 0, 0, 0.23);
+}
+
+/*左边侧边栏 菜系名称card*/
+.all {
+    position: fixed;
+    width: 0px;
+    overflow: visible;
+}
+
+.box {
+    display: inline-block;
+    float: right;
+    clear: both;
+}
+
+.card {
+    position: relative;
+    left: 32px;
+    padding: 16px 32px 16px 50px;
+    margin: 8px;
+    x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    transition: all 0.4s ease-in-out 0.05s; /* 過渡*/
+}
+
+.card.active {
+    position: relative;
+    left: 100%;
+    margin-left: -60px;
+    box-shadow: 0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+    0 8px 8px -8px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    position: relative;
+    left: 100%;
+    margin-left: -40px;
+    box-shadow: 0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+    0 8px 8px -8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-content {
+    color: #fff;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.bg-01 {
+    background: #539770;
+}
+
+.bg-02 {
+    background: #4B7D74;
+}
+
+.bg-03 {
+    background: #8DC2BC;
+}
+
+.bg-04 {
+    background: #EDD6B4;
+}
+
+.bg-05 {
+    background: #BE7467;
+}
+
+.bg-06 {
+    background: #E2AE63;
+}
+
+.bg-07 {
+    background: #996699;
+}
+
+.bg-08 {
+    background: #999966;
+}
+
+/*文字样式*/
+.forceText {
+    font-family: '幼圆', sans-serif;
+    font-weight: bold;
+}
+
+/*鼠标滑动时缓慢变大*/
+#graph:hover {
+    -webkit-transform: scale(1.01);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 1000ms;
+    -moz-transform: scale(1.01);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 1000ms;
+    overflow: hidden !important;
+}
+
+/*右侧的描点定位*/
+ul.nav-pills {
+    /*top: 80px;*/
+    position: fixed;
+}
+
+#myScrollspy a {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.left-nav > li > a {
+    padding: 10px 12px;
+}
+
+/*返回顶部*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/top.png") no-repeat 0px 0px;
+    z-index: 99999;
+}
+
+#toTop:hover {
+    background: url("../images/toped.png") no-repeat 0px 0px;
+}
+
+/*section 3 历史发展*/
+#section3 tr {
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
+
+#section3 tr:hover {
+    color: rgb(141, 194, 188);
+    /*background-color: rgba(0, 0, 6, 0.05);*/
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) inset;
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+#section3 #history-info {
+    background: url(../images/banner.png) no-repeat center;
+}
+
+/*
+八大菜系
+*/
+
+#eight-cuisine a:hover{
+
+}
+
+/*鲁菜主体介绍部分 */
+.table > tbody > tr > .first-Tr {
+    border-top: 0px;
+}
+
+#food-section {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 6;
+
+}
+
+#food-section a {
+    text-decoration: none;
+}
+#food-section .breadcrumb a:hover {
+    text-decoration: none;
+    color: rgb(51, 122, 183);
+}
+
+#section4 {
+    background: rgb(222, 236, 223);
+}
+
+.post-masonry {
+    margin-bottom: 30px;
+}
+
+.post-masonry .post-thumb {
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.post-masonry .post-thumb img {
+    width: 100%;
+    display: block;
+}
+
+.post-masonry .post-thumb .title-over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 7px 20px;
+}
+
+.post-masonry .post-thumb .title-over h4 {
+    font-size: 16px;
+}
+
+.post-masonry .post-thumb .title-over a {
+    color: #fff;
+}
+
+.post-masonry .post-thumb .post-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.post-masonry .post-thumb .post-hover .inside {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.post-masonry .post-thumb .post-hover h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.post-masonry .post-thumb .post-hover a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.post-masonry .post-thumb .post-hover p {
+    font-size: 8px;
+    line-height: 17px;
+    padding: 5px 15px;
+}
+
+.post-masonry .post-thumb .post-hover span {
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.post-masonry .post-thumb:hover .title-over {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    bottom: -50px;
+}
+
+.post-masonry .post-thumb:hover .post-hover {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.item, .video {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+#section5 p {
+    font-size: 17px;
+    font-family: "幼圆", sans-serif;
+    color: #4B7D74;
+}
+
+/*
+cooking-culture-of-China page
+*/
+.box-content {
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.box::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#food-section .all .box:first-child {
+    margin-top: 0px;
+}
+
+.box {
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: -2em;
+    clear: both;
+
+}
+
+.first, .second, .third {
+    text-align: center;
+    padding: 0px;
+}
+
+.second {
+    top: -60px;
+}
+
+.third {
+    top: -120px;
+}
+
+.lineF, .lineS, .lineT {
+    visibility: hidden;
+}
+
+.boxF, .boxS, .boxT, .overlay {
+    width: 200px;
+    height: 235px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 10px transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxF:hover {
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    -ms-animation: spin 10s linear infinite;
+    -o-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+    box-shadow: 0 0 0 3px rgba(125, 139, 153, 0.15);
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(120deg);
+    }
+
+    to {
+        -webkit-transform: rotate(480deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(120deg);
+    }
+
+    to {
+        -moz-transform: rotate(480deg);
+    }
+}
+
+@-o-keyframes spin {
+    from {
+        -o-transform: rotate(120deg);
+    }
+
+    to {
+        -o-transform: rotate(480deg);
+    }
+}
+
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(120deg);
+    }
+
+    to {
+        -ms-transform: rotate(480deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(120deg);
+    }
+
+    to {
+        transform: rotate(480deg);
+    }
+}
+
+@media (max-width: 992px) {
+    .boxF, .boxS, .boxT, .overlay {
+        width: 150px;
+        height: 200px;
+    }
+
+    .boxF {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxF, .boxS, .boxT {
+        width: 98px;
+        height: 112px;
+    }
+
+    .second {
+        top: -25px;
+    }
+
+    .third {
+        top: -50px;
+    }
+
+    .glyphicon {
+        top: -4px;
+    }
+
+    .overlay a {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+.boxF, .boxS {
+    visibility: hidden;
+}
+
+.boxF {
+    display: inline-block;
+    transform: rotate(120deg);
+    margin-left: 8px;
+    -ms-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+}
+
+.boxS {
+    transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+}
+
+.boxT {
+    transform: rotate(-60deg);
+    background: no-repeat 50% center;
+    background-size: 125% auto;
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    visibility: visible;
+}
+
+.overlay {
+    transition: all 250ms ease-in-out 0s;
+    display: none;
+    /*position: relative;*/
+
+}
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.boxT:hover .overlay {
+    display: block;
+}
+
+.overlay a {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -18px 0 0 -24px;
+    border-radius: 50%;
+    background-color: #d3b850;
+    text-align: center;
+    line-height: 50px;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    color: White;
+    font-size: 16px;
+    font-weight: bolder;
+    clear: both;
+}
+
+/*tabs*/
+#tabs {
+    padding-top: 50px;
+}
+
+.tabs {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.tabs__item {
+    will-change: transform, opacity, box-shadow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    z-index: 1;
+    padding: 0 50px;
+    color: white;
+    box-shadow: 0 30px 60px transparent;
+    -webkit-transform-origin: center 5%;
+    -ms-transform-origin: center 5%;
+    transform-origin: center 5%;
+    overflow: hidden;
+    -webkit-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tabs__item h2 {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.tabs__item h2 span {
+    display: block;
+    font-size: 36px;
+}
+
+.tabs__num {
+    text-align: center;
+    font-size: 200px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tabs__stats {
+    text-align: center;
+    font-size: 14px;
+    margin: 25px 0 0;
+    font-weight: 700;
+}
+
+.views-toggle {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.views-toggle--hidden {
+    opacity: 0;
+    display: none;
+    /*visibility: hidden;*/
+    z-index: 0;
+}
+
+.views-toggle:hover {
+    opacity: 1;
+}
+
+.color1 {
+    background: #5271C2;
+}
+
+.color1 .tabs__num {
+    text-shadow: 1px 1px rgba(52, 78, 147, 0.7), 2px 2px rgba(52, 78, 147, 0.703), 3px 3px rgba(53, 79, 148, 0.706), 4px 4px rgba(53, 79, 149, 0.709), 5px 5px rgba(54, 80, 150, 0.712), 6px 6px rgba(54, 81, 151, 0.715), 7px 7px rgba(55, 81, 151, 0.718), 8px 8px rgba(55, 82, 152, 0.721), 9px 9px rgba(56, 82, 153, 0.724), 10px 10px rgba(56, 83, 154, 0.727), 11px 11px rgba(57, 83, 155, 0.73), 12px 12px rgba(57, 84, 155, 0.733), 13px 13px rgba(58, 85, 156, 0.736), 14px 14px rgba(58, 85, 157, 0.739), 15px 15px rgba(58, 86, 157, 0.742), 16px 16px rgba(59, 86, 158, 0.745), 17px 17px rgba(59, 87, 159, 0.748), 18px 18px rgba(60, 87, 159, 0.751), 19px 19px rgba(60, 88, 160, 0.754), 20px 20px rgba(61, 88, 161, 0.757), 21px 21px rgba(61, 89, 161, 0.76), 22px 22px rgba(61, 89, 162, 0.763), 23px 23px rgba(62, 90, 163, 0.766), 24px 24px rgba(62, 90, 163, 0.769), 25px 25px rgba(63, 90, 164, 0.772), 26px 26px rgba(63, 91, 164, 0.775), 27px 27px rgba(63, 91, 165, 0.778), 28px 28px rgba(64, 92, 166, 0.781), 29px 29px rgba(64, 92, 166, 0.784), 30px 30px rgba(64, 93, 167, 0.787), 31px 31px rgba(65, 93, 167, 0.79), 32px 32px rgba(65, 93, 168, 0.793), 33px 33px rgba(65, 94, 168, 0.796), 34px 34px rgba(66, 94, 169, 0.799), 35px 35px rgba(66, 95, 169, 0.802), 36px 36px rgba(67, 95, 170, 0.805), 37px 37px rgba(67, 95, 171, 0.808), 38px 38px rgba(67, 96, 171, 0.811), 39px 39px rgba(67, 96, 172, 0.814), 40px 40px rgba(68, 96, 172, 0.817), 41px 41px rgba(68, 97, 173, 0.82), 42px 42px rgba(68, 97, 173, 0.823), 43px 43px rgba(69, 98, 173, 0.826), 44px 44px rgba(69, 98, 174, 0.829), 45px 45px rgba(69, 98, 174, 0.832), 46px 46px rgba(70, 99, 175, 0.835), 47px 47px rgba(70, 99, 175, 0.838), 48px 48px rgba(70, 99, 176, 0.841), 49px 49px rgba(70, 100, 176, 0.844), 50px 50px rgba(71, 100, 177, 0.847), 51px 51px rgba(71, 100, 177, 0.85), 52px 52px rgba(71, 101, 177, 0.853), 53px 53px rgba(72, 101, 178, 0.856), 54px 54px rgba(72, 101, 178, 0.859), 55px 55px rgba(72, 101, 179, 0.862), 56px 56px rgba(72, 102, 179, 0.865), 57px 57px rgba(73, 102, 180, 0.868), 58px 58px rgba(73, 102, 180, 0.871), 59px 59px rgba(73, 103, 180, 0.874), 60px 60px rgba(73, 103, 181, 0.877), 61px 61px rgba(74, 103, 181, 0.88), 62px 62px rgba(74, 104, 181, 0.883), 63px 63px rgba(74, 104, 182, 0.886), 64px 64px rgba(74, 104, 182, 0.889), 65px 65px rgba(75, 104, 183, 0.892), 66px 66px rgba(75, 105, 183, 0.895), 67px 67px rgba(75, 105, 183, 0.898), 68px 68px rgba(75, 105, 184, 0.901), 69px 69px rgba(75, 105, 184, 0.904), 70px 70px rgba(76, 106, 184, 0.907), 71px 71px rgba(76, 106, 185, 0.91), 72px 72px rgba(76, 106, 185, 0.913), 73px 73px rgba(76, 106, 185, 0.916), 74px 74px rgba(77, 107, 186, 0.919), 75px 75px rgba(77, 107, 186, 0.922), 76px 76px rgba(77, 107, 186, 0.925), 77px 77px rgba(77, 107, 187, 0.928), 78px 78px rgba(77, 108, 187, 0.931), 79px 79px rgba(78, 108, 187, 0.934), 80px 80px rgba(78, 108, 188, 0.937), 81px 81px rgba(78, 108, 188, 0.94), 82px 82px rgba(78, 109, 188, 0.943), 83px 83px rgba(78, 109, 189, 0.946), 84px 84px rgba(79, 109, 189, 0.949), 85px 85px rgba(79, 109, 189, 0.952), 86px 86px rgba(79, 109, 189, 0.955), 87px 87px rgba(79, 110, 190, 0.958), 88px 88px rgba(79, 110, 190, 0.961), 89px 89px rgba(79, 110, 190, 0.964), 90px 90px rgba(80, 110, 191, 0.967), 91px 91px rgba(80, 111, 191, 0.97), 92px 92px rgba(80, 111, 191, 0.973), 93px 93px rgba(80, 111, 191, 0.976), 94px 94px rgba(80, 111, 192, 0.979), 95px 95px rgba(81, 111, 192, 0.982), 96px 96px rgba(81, 112, 192, 0.985), 97px 97px rgba(81, 112, 192, 0.988), 98px 98px rgba(81, 112, 193, 0.991), 99px 99px rgba(81, 112, 193, 0.994), 100px 100px rgba(81, 112, 193, 0.997);
+}
+
+.color2 {
+    background: #35a541;
+}
+
+.color2 .tabs__num {
+    text-shadow: 1px 1px rgba(34, 107, 42, 0.7), 2px 2px rgba(34, 108, 42, 0.703), 3px 3px rgba(34, 109, 42, 0.706), 4px 4px rgba(35, 110, 43, 0.709), 5px 5px rgba(35, 111, 43, 0.712), 6px 6px rgba(35, 112, 44, 0.715), 7px 7px rgba(36, 113, 44, 0.718), 8px 8px rgba(36, 114, 44, 0.721), 9px 9px rgba(36, 115, 45, 0.724), 10px 10px rgba(36, 116, 45, 0.727), 11px 11px rgba(37, 116, 45, 0.73), 12px 12px rgba(37, 117, 46, 0.733), 13px 13px rgba(37, 118, 46, 0.736), 14px 14px rgba(38, 119, 46, 0.739), 15px 15px rgba(38, 120, 47, 0.742), 16px 16px rgba(38, 121, 47, 0.745), 17px 17px rgba(38, 122, 48, 0.748), 18px 18px rgba(39, 122, 48, 0.751), 19px 19px rgba(39, 123, 48, 0.754), 20px 20px rgba(39, 124, 48, 0.757), 21px 21px rgba(40, 125, 49, 0.76), 22px 22px rgba(40, 126, 49, 0.763), 23px 23px rgba(40, 126, 49, 0.766), 24px 24px rgba(40, 127, 50, 0.769), 25px 25px rgba(41, 128, 50, 0.772), 26px 26px rgba(41, 129, 50, 0.775), 27px 27px rgba(41, 129, 51, 0.778), 28px 28px rgba(41, 130, 51, 0.781), 29px 29px rgba(41, 131, 51, 0.784), 30px 30px rgba(42, 132, 51, 0.787), 31px 31px rgba(42, 132, 52, 0.79), 32px 32px rgba(42, 133, 52, 0.793), 33px 33px rgba(42, 134, 52, 0.796), 34px 34px rgba(43, 134, 52, 0.799), 35px 35px rgba(43, 135, 53, 0.802), 36px 36px rgba(43, 136, 53, 0.805), 37px 37px rgba(43, 136, 53, 0.808), 38px 38px rgba(43, 137, 53, 0.811), 39px 39px rgba(44, 137, 54, 0.814), 40px 40px rgba(44, 138, 54, 0.817), 41px 41px rgba(44, 139, 54, 0.82), 42px 42px rgba(44, 139, 54, 0.823), 43px 43px rgba(44, 140, 55, 0.826), 44px 44px rgba(45, 140, 55, 0.829), 45px 45px rgba(45, 141, 55, 0.832), 46px 46px rgba(45, 141, 55, 0.835), 47px 47px rgba(45, 142, 56, 0.838), 48px 48px rgba(45, 143, 56, 0.841), 49px 49px rgba(46, 143, 56, 0.844), 50px 50px rgba(46, 144, 56, 0.847), 51px 51px rgba(46, 144, 56, 0.85), 52px 52px rgba(46, 145, 57, 0.853), 53px 53px rgba(46, 145, 57, 0.856), 54px 54px rgba(46, 146, 57, 0.859), 55px 55px rgba(47, 146, 57, 0.862), 56px 56px rgba(47, 147, 57, 0.865), 57px 57px rgba(47, 147, 58, 0.868), 58px 58px rgba(47, 148, 58, 0.871), 59px 59px rgba(47, 148, 58, 0.874), 60px 60px rgba(47, 149, 58, 0.877), 61px 61px rgba(47, 149, 58, 0.88), 62px 62px rgba(48, 150, 59, 0.883), 63px 63px rgba(48, 150, 59, 0.886), 64px 64px rgba(48, 151, 59, 0.889), 65px 65px rgba(48, 151, 59, 0.892), 66px 66px rgba(48, 151, 59, 0.895), 67px 67px rgba(48, 152, 60, 0.898), 68px 68px rgba(49, 152, 60, 0.901), 69px 69px rgba(49, 153, 60, 0.904), 70px 70px rgba(49, 153, 60, 0.907), 71px 71px rgba(49, 154, 60, 0.91), 72px 72px rgba(49, 154, 60, 0.913), 73px 73px rgba(49, 154, 61, 0.916), 74px 74px rgba(49, 155, 61, 0.919), 75px 75px rgba(49, 155, 61, 0.922), 76px 76px rgba(50, 156, 61, 0.925), 77px 77px rgba(50, 156, 61, 0.928), 78px 78px rgba(50, 156, 61, 0.931), 79px 79px rgba(50, 157, 61, 0.934), 80px 80px rgba(50, 157, 62, 0.937), 81px 81px rgba(50, 158, 62, 0.94), 82px 82px rgba(50, 158, 62, 0.943), 83px 83px rgba(50, 158, 62, 0.946), 84px 84px rgba(51, 159, 62, 0.949), 85px 85px rgba(51, 159, 62, 0.952), 86px 86px rgba(51, 159, 63, 0.955), 87px 87px rgba(51, 160, 63, 0.958), 88px 88px rgba(51, 160, 63, 0.961), 89px 89px rgba(51, 161, 63, 0.964), 90px 90px rgba(51, 161, 63, 0.967), 91px 91px rgba(51, 161, 63, 0.97), 92px 92px rgba(52, 162, 63, 0.973), 93px 93px rgba(52, 162, 63, 0.976), 94px 94px rgba(52, 162, 64, 0.979), 95px 95px rgba(52, 163, 64, 0.982), 96px 96px rgba(52, 163, 64, 0.985), 97px 97px rgba(52, 163, 64, 0.988), 98px 98px rgba(52, 164, 64, 0.991), 99px 99px rgba(52, 164, 64, 0.994), 100px 100px rgba(52, 164, 64, 0.997);
+}
+
+.color3 {
+    background: #bdb235;
+}
+
+.color3 .tabs__num {
+    text-shadow: 1px 1px rgba(129, 122, 36, 0.7), 2px 2px rgba(130, 123, 36, 0.703), 3px 3px rgba(131, 124, 36, 0.706), 4px 4px rgba(132, 125, 36, 0.709), 5px 5px rgba(133, 126, 37, 0.712), 6px 6px rgba(134, 126, 37, 0.715), 7px 7px rgba(135, 127, 37, 0.718), 8px 8px rgba(136, 128, 38, 0.721), 9px 9px rgba(137, 129, 38, 0.724), 10px 10px rgba(138, 130, 38, 0.727), 11px 11px rgba(139, 131, 38, 0.73), 12px 12px rgba(140, 132, 39, 0.733), 13px 13px rgba(141, 133, 39, 0.736), 14px 14px rgba(142, 134, 39, 0.739), 15px 15px rgba(142, 135, 39, 0.742), 16px 16px rgba(143, 135, 40, 0.745), 17px 17px rgba(144, 136, 40, 0.748), 18px 18px rgba(145, 137, 40, 0.751), 19px 19px rgba(146, 138, 40, 0.754), 20px 20px rgba(147, 138, 41, 0.757), 21px 21px rgba(148, 139, 41, 0.76), 22px 22px rgba(148, 140, 41, 0.763), 23px 23px rgba(149, 141, 41, 0.766), 24px 24px rgba(150, 141, 42, 0.769), 25px 25px rgba(151, 142, 42, 0.772), 26px 26px rgba(151, 143, 42, 0.775), 27px 27px rgba(152, 144, 42, 0.778), 28px 28px rgba(153, 144, 42, 0.781), 29px 29px rgba(154, 145, 43, 0.784), 30px 30px rgba(154, 146, 43, 0.787), 31px 31px rgba(155, 146, 43, 0.79), 32px 32px rgba(156, 147, 43, 0.793), 33px 33px rgba(156, 148, 43, 0.796), 34px 34px rgba(157, 148, 44, 0.799), 35px 35px rgba(158, 149, 44, 0.802), 36px 36px rgba(159, 150, 44, 0.805), 37px 37px rgba(159, 150, 44, 0.808), 38px 38px rgba(160, 151, 44, 0.811), 39px 39px rgba(160, 151, 45, 0.814), 40px 40px rgba(161, 152, 45, 0.817), 41px 41px rgba(162, 152, 45, 0.82), 42px 42px rgba(162, 153, 45, 0.823), 43px 43px rgba(163, 154, 45, 0.826), 44px 44px rgba(164, 154, 45, 0.829), 45px 45px rgba(164, 155, 46, 0.832), 46px 46px rgba(165, 155, 46, 0.835), 47px 47px rgba(165, 156, 46, 0.838), 48px 48px rgba(166, 156, 46, 0.841), 49px 49px rgba(166, 157, 46, 0.844), 50px 50px rgba(167, 157, 46, 0.847), 51px 51px rgba(168, 158, 47, 0.85), 52px 52px rgba(168, 158, 47, 0.853), 53px 53px rgba(169, 159, 47, 0.856), 54px 54px rgba(169, 159, 47, 0.859), 55px 55px rgba(170, 160, 47, 0.862), 56px 56px rgba(170, 160, 47, 0.865), 57px 57px rgba(171, 161, 47, 0.868), 58px 58px rgba(171, 161, 48, 0.871), 59px 59px rgba(172, 162, 48, 0.874), 60px 60px rgba(172, 162, 48, 0.877), 61px 61px rgba(173, 163, 48, 0.88), 62px 62px rgba(173, 163, 48, 0.883), 63px 63px rgba(174, 164, 48, 0.886), 64px 64px rgba(174, 164, 48, 0.889), 65px 65px rgba(175, 164, 49, 0.892), 66px 66px rgba(175, 165, 49, 0.895), 67px 67px rgba(175, 165, 49, 0.898), 68px 68px rgba(176, 166, 49, 0.901), 69px 69px rgba(176, 166, 49, 0.904), 70px 70px rgba(177, 167, 49, 0.907), 71px 71px rgba(177, 167, 49, 0.91), 72px 72px rgba(178, 167, 49, 0.913), 73px 73px rgba(178, 168, 50, 0.916), 74px 74px rgba(179, 168, 50, 0.919), 75px 75px rgba(179, 169, 50, 0.922), 76px 76px rgba(179, 169, 50, 0.925), 77px 77px rgba(180, 169, 50, 0.928), 78px 78px rgba(180, 170, 50, 0.931), 79px 79px rgba(181, 170, 50, 0.934), 80px 80px rgba(181, 170, 50, 0.937), 81px 81px rgba(181, 171, 50, 0.94), 82px 82px rgba(182, 171, 51, 0.943), 83px 83px rgba(182, 172, 51, 0.946), 84px 84px rgba(183, 172, 51, 0.949), 85px 85px rgba(183, 172, 51, 0.952), 86px 86px rgba(183, 173, 51, 0.955), 87px 87px rgba(184, 173, 51, 0.958), 88px 88px rgba(184, 173, 51, 0.961), 89px 89px rgba(184, 174, 51, 0.964), 90px 90px rgba(185, 174, 51, 0.967), 91px 91px rgba(185, 174, 52, 0.97), 92px 92px rgba(185, 175, 52, 0.973), 93px 93px rgba(186, 175, 52, 0.976), 94px 94px rgba(186, 175, 52, 0.979), 95px 95px rgba(187, 176, 52, 0.982), 96px 96px rgba(187, 176, 52, 0.985), 97px 97px rgba(187, 176, 52, 0.988), 98px 98px rgba(188, 177, 52, 0.991), 99px 99px rgba(188, 177, 52, 0.994), 100px 100px rgba(188, 177, 52, 0.997);
+}
+
+.color4 {
+    background: #db6623;
+}
+
+.color4 .tabs__num {
+    text-shadow: 1px 1px rgba(153, 71, 24, 0.7), 2px 2px rgba(154, 71, 24, 0.703), 3px 3px rgba(155, 72, 24, 0.706), 4px 4px rgba(156, 72, 24, 0.709), 5px 5px rgba(157, 73, 24, 0.712), 6px 6px rgba(158, 73, 24, 0.715), 7px 7px rgba(159, 74, 25, 0.718), 8px 8px rgba(161, 74, 25, 0.721), 9px 9px rgba(162, 75, 25, 0.724), 10px 10px rgba(163, 75, 25, 0.727), 11px 11px rgba(164, 76, 25, 0.73), 12px 12px rgba(165, 76, 26, 0.733), 13px 13px rgba(166, 77, 26, 0.736), 14px 14px rgba(167, 77, 26, 0.739), 15px 15px rgba(168, 78, 26, 0.742), 16px 16px rgba(169, 78, 26, 0.745), 17px 17px rgba(170, 79, 26, 0.748), 18px 18px rgba(171, 79, 27, 0.751), 19px 19px rgba(172, 79, 27, 0.754), 20px 20px rgba(173, 80, 27, 0.757), 21px 21px rgba(173, 80, 27, 0.76), 22px 22px rgba(174, 81, 27, 0.763), 23px 23px rgba(175, 81, 27, 0.766), 24px 24px rgba(176, 82, 27, 0.769), 25px 25px rgba(177, 82, 28, 0.772), 26px 26px rgba(178, 82, 28, 0.775), 27px 27px rgba(179, 83, 28, 0.778), 28px 28px rgba(179, 83, 28, 0.781), 29px 29px rgba(180, 84, 28, 0.784), 30px 30px rgba(181, 84, 28, 0.787), 31px 31px rgba(182, 84, 28, 0.79), 32px 32px rgba(183, 85, 29, 0.793), 33px 33px rgba(183, 85, 29, 0.796), 34px 34px rgba(184, 85, 29, 0.799), 35px 35px rgba(185, 86, 29, 0.802), 36px 36px rgba(186, 86, 29, 0.805), 37px 37px rgba(186, 86, 29, 0.808), 38px 38px rgba(187, 87, 29, 0.811), 39px 39px rgba(188, 87, 29, 0.814), 40px 40px rgba(188, 87, 29, 0.817), 41px 41px rgba(189, 88, 30, 0.82), 42px 42px rgba(190, 88, 30, 0.823), 43px 43px rgba(190, 88, 30, 0.826), 44px 44px rgba(191, 89, 30, 0.829), 45px 45px rgba(192, 89, 30, 0.832), 46px 46px rgba(192, 89, 30, 0.835), 47px 47px rgba(193, 89, 30, 0.838), 48px 48px rgba(194, 90, 30, 0.841), 49px 49px rgba(194, 90, 30, 0.844), 50px 50px rgba(195, 90, 31, 0.847), 51px 51px rgba(195, 91, 31, 0.85), 52px 52px rgba(196, 91, 31, 0.853), 53px 53px rgba(197, 91, 31, 0.856), 54px 54px rgba(197, 91, 31, 0.859), 55px 55px rgba(198, 92, 31, 0.862), 56px 56px rgba(198, 92, 31, 0.865), 57px 57px rgba(199, 92, 31, 0.868), 58px 58px rgba(199, 93, 31, 0.871), 59px 59px rgba(200, 93, 31, 0.874), 60px 60px rgba(201, 93, 32, 0.877), 61px 61px rgba(201, 93, 32, 0.88), 62px 62px rgba(202, 94, 32, 0.883), 63px 63px rgba(202, 94, 32, 0.886), 64px 64px rgba(203, 94, 32, 0.889), 65px 65px rgba(203, 94, 32, 0.892), 66px 66px rgba(204, 95, 32, 0.895), 67px 67px rgba(204, 95, 32, 0.898), 68px 68px rgba(205, 95, 32, 0.901), 69px 69px rgba(205, 95, 32, 0.904), 70px 70px rgba(206, 95, 32, 0.907), 71px 71px rgba(206, 96, 32, 0.91), 72px 72px rgba(207, 96, 33, 0.913), 73px 73px rgba(207, 96, 33, 0.916), 74px 74px rgba(208, 96, 33, 0.919), 75px 75px rgba(208, 97, 33, 0.922), 76px 76px rgba(208, 97, 33, 0.925), 77px 77px rgba(209, 97, 33, 0.928), 78px 78px rgba(209, 97, 33, 0.931), 79px 79px rgba(210, 97, 33, 0.934), 80px 80px rgba(210, 98, 33, 0.937), 81px 81px rgba(211, 98, 33, 0.94), 82px 82px rgba(211, 98, 33, 0.943), 83px 83px rgba(212, 98, 33, 0.946), 84px 84px rgba(212, 98, 33, 0.949), 85px 85px rgba(212, 99, 33, 0.952), 86px 86px rgba(213, 99, 34, 0.955), 87px 87px rgba(213, 99, 34, 0.958), 88px 88px rgba(214, 99, 34, 0.961), 89px 89px rgba(214, 99, 34, 0.964), 90px 90px rgba(214, 100, 34, 0.967), 91px 91px rgba(215, 100, 34, 0.97), 92px 92px rgba(215, 100, 34, 0.973), 93px 93px rgba(216, 100, 34, 0.976), 94px 94px rgba(216, 100, 34, 0.979), 95px 95px rgba(216, 100, 34, 0.982), 96px 96px rgba(217, 101, 34, 0.985), 97px 97px rgba(217, 101, 34, 0.988), 98px 98px rgba(217, 101, 34, 0.991), 99px 99px rgba(218, 101, 34, 0.994), 100px 100px rgba(218, 101, 34, 0.997);
+}
+
+.color5 {
+    background: #3e5eb3;
+}
+
+.color5 .tabs__num {
+    text-shadow: 1px 1px rgba(42, 64, 122, 0.7), 2px 2px rgba(42, 64, 123, 0.703), 3px 3px rgba(42, 65, 124, 0.706), 4px 4px rgba(43, 65, 125, 0.709), 5px 5px rgba(43, 66, 126, 0.712), 6px 6px rgba(43, 66, 127, 0.715), 7px 7px rgba(44, 67, 128, 0.718), 8px 8px rgba(44, 67, 128, 0.721), 9px 9px rgba(44, 68, 129, 0.724), 10px 10px rgba(45, 68, 130, 0.727), 11px 11px rgba(45, 69, 131, 0.73), 12px 12px rgba(45, 69, 132, 0.733), 13px 13px rgba(46, 70, 133, 0.736), 14px 14px rgba(46, 70, 134, 0.739), 15px 15px rgba(46, 70, 135, 0.742), 16px 16px rgba(46, 71, 136, 0.745), 17px 17px rgba(47, 71, 136, 0.748), 18px 18px rgba(47, 72, 137, 0.751), 19px 19px rgba(47, 72, 138, 0.754), 20px 20px rgba(48, 73, 139, 0.757), 21px 21px rgba(48, 73, 140, 0.76), 22px 22px rgba(48, 73, 140, 0.763), 23px 23px rgba(48, 74, 141, 0.766), 24px 24px rgba(49, 74, 142, 0.769), 25px 25px rgba(49, 75, 143, 0.772), 26px 26px rgba(49, 75, 143, 0.775), 27px 27px rgba(49, 75, 144, 0.778), 28px 28px rgba(50, 76, 145, 0.781), 29px 29px rgba(50, 76, 145, 0.784), 30px 30px rgba(50, 76, 146, 0.787), 31px 31px rgba(50, 77, 147, 0.79), 32px 32px rgba(51, 77, 147, 0.793), 33px 33px rgba(51, 77, 148, 0.796), 34px 34px rgba(51, 78, 149, 0.799), 35px 35px rgba(51, 78, 149, 0.802), 36px 36px rgba(52, 79, 150, 0.805), 37px 37px rgba(52, 79, 151, 0.808), 38px 38px rgba(52, 79, 151, 0.811), 39px 39px rgba(52, 79, 152, 0.814), 40px 40px rgba(52, 80, 152, 0.817), 41px 41px rgba(53, 80, 153, 0.82), 42px 42px rgba(53, 80, 154, 0.823), 43px 43px rgba(53, 81, 154, 0.826), 44px 44px rgba(53, 81, 155, 0.829), 45px 45px rgba(53, 81, 155, 0.832), 46px 46px rgba(54, 82, 156, 0.835), 47px 47px rgba(54, 82, 156, 0.838), 48px 48px rgba(54, 82, 157, 0.841), 49px 49px rgba(54, 82, 158, 0.844), 50px 50px rgba(54, 83, 158, 0.847), 51px 51px rgba(55, 83, 159, 0.85), 52px 52px rgba(55, 83, 159, 0.853), 53px 53px rgba(55, 84, 160, 0.856), 54px 54px rgba(55, 84, 160, 0.859), 55px 55px rgba(55, 84, 161, 0.862), 56px 56px rgba(55, 84, 161, 0.865), 57px 57px rgba(56, 85, 162, 0.868), 58px 58px rgba(56, 85, 162, 0.871), 59px 59px rgba(56, 85, 163, 0.874), 60px 60px rgba(56, 85, 163, 0.877), 61px 61px rgba(56, 86, 163, 0.88), 62px 62px rgba(56, 86, 164, 0.883), 63px 63px rgba(57, 86, 164, 0.886), 64px 64px rgba(57, 86, 165, 0.889), 65px 65px rgba(57, 87, 165, 0.892), 66px 66px rgba(57, 87, 166, 0.895), 67px 67px rgba(57, 87, 166, 0.898), 68px 68px rgba(57, 87, 167, 0.901), 69px 69px rgba(57, 87, 167, 0.904), 70px 70px rgba(58, 88, 167, 0.907), 71px 71px rgba(58, 88, 168, 0.91), 72px 72px rgba(58, 88, 168, 0.913), 73px 73px rgba(58, 88, 169, 0.916), 74px 74px rgba(58, 89, 169, 0.919), 75px 75px rgba(58, 89, 169, 0.922), 76px 76px rgba(58, 89, 170, 0.925), 77px 77px rgba(59, 89, 170, 0.928), 78px 78px rgba(59, 89, 171, 0.931), 79px 79px rgba(59, 90, 171, 0.934), 80px 80px rgba(59, 90, 171, 0.937), 81px 81px rgba(59, 90, 172, 0.94), 82px 82px rgba(59, 90, 172, 0.943), 83px 83px rgba(59, 90, 172, 0.946), 84px 84px rgba(60, 91, 173, 0.949), 85px 85px rgba(60, 91, 173, 0.952), 86px 86px rgba(60, 91, 174, 0.955), 87px 87px rgba(60, 91, 174, 0.958), 88px 88px rgba(60, 91, 174, 0.961), 89px 89px rgba(60, 91, 175, 0.964), 90px 90px rgba(60, 92, 175, 0.967), 91px 91px rgba(60, 92, 175, 0.97), 92px 92px rgba(60, 92, 176, 0.973), 93px 93px rgba(61, 92, 176, 0.976), 94px 94px rgba(61, 92, 176, 0.979), 95px 95px rgba(61, 93, 177, 0.982), 96px 96px rgba(61, 93, 177, 0.985), 97px 97px rgba(61, 93, 177, 0.988), 98px 98px rgba(61, 93, 178, 0.991), 99px 99px rgba(61, 93, 178, 0.994), 100px 100px rgba(61, 93, 178, 0.997);
+}
+
+.color6 {
+    background: #aa9e5c;
+}
+
+.color6 .tabs__num {
+    text-shadow: 1px 1px rgba(122, 113, 64, 0.7), 2px 2px rgba(122, 113, 64, 0.703), 3px 3px rgba(123, 114, 65, 0.706), 4px 4px rgba(124, 115, 65, 0.709), 5px 5px rgba(125, 116, 66, 0.712), 6px 6px rgba(126, 117, 66, 0.715), 7px 7px rgba(127, 117, 66, 0.718), 8px 8px rgba(127, 118, 67, 0.721), 9px 9px rgba(128, 119, 67, 0.724), 10px 10px rgba(129, 119, 68, 0.727), 11px 11px rgba(130, 120, 68, 0.73), 12px 12px rgba(130, 121, 69, 0.733), 13px 13px rgba(131, 122, 69, 0.736), 14px 14px rgba(132, 122, 70, 0.739), 15px 15px rgba(133, 123, 70, 0.742), 16px 16px rgba(133, 124, 70, 0.745), 17px 17px rgba(134, 124, 71, 0.748), 18px 18px rgba(135, 125, 71, 0.751), 19px 19px rgba(135, 126, 72, 0.754), 20px 20px rgba(136, 126, 72, 0.757), 21px 21px rgba(137, 127, 72, 0.76), 22px 22px rgba(137, 127, 73, 0.763), 23px 23px rgba(138, 128, 73, 0.766), 24px 24px rgba(139, 129, 73, 0.769), 25px 25px rgba(139, 129, 74, 0.772), 26px 26px rgba(140, 130, 74, 0.775), 27px 27px rgba(140, 130, 75, 0.778), 28px 28px rgba(141, 131, 75, 0.781), 29px 29px rgba(142, 131, 75, 0.784), 30px 30px rgba(142, 132, 76, 0.787), 31px 31px rgba(143, 132, 76, 0.79), 32px 32px rgba(143, 133, 76, 0.793), 33px 33px rgba(144, 133, 77, 0.796), 34px 34px rgba(144, 134, 77, 0.799), 35px 35px rgba(145, 135, 77, 0.802), 36px 36px rgba(146, 135, 78, 0.805), 37px 37px rgba(146, 135, 78, 0.808), 38px 38px rgba(147, 136, 78, 0.811), 39px 39px rgba(147, 136, 78, 0.814), 40px 40px rgba(148, 137, 79, 0.817), 41px 41px rgba(148, 137, 79, 0.82), 42px 42px rgba(149, 138, 79, 0.823), 43px 43px rgba(149, 138, 80, 0.826), 44px 44px rgba(150, 139, 80, 0.829), 45px 45px rgba(150, 139, 80, 0.832), 46px 46px rgba(150, 140, 80, 0.835), 47px 47px rgba(151, 140, 81, 0.838), 48px 48px rgba(151, 140, 81, 0.841), 49px 49px rgba(152, 141, 81, 0.844), 50px 50px rgba(152, 141, 81, 0.847), 51px 51px rgba(153, 142, 82, 0.85), 52px 52px rgba(153, 142, 82, 0.853), 53px 53px rgba(154, 143, 82, 0.856), 54px 54px rgba(154, 143, 82, 0.859), 55px 55px rgba(154, 143, 83, 0.862), 56px 56px rgba(155, 144, 83, 0.865), 57px 57px rgba(155, 144, 83, 0.868), 58px 58px rgba(156, 145, 83, 0.871), 59px 59px rgba(156, 145, 84, 0.874), 60px 60px rgba(156, 145, 84, 0.877), 61px 61px rgba(157, 146, 84, 0.88), 62px 62px rgba(157, 146, 84, 0.883), 63px 63px rgba(158, 146, 85, 0.886), 64px 64px rgba(158, 147, 85, 0.889), 65px 65px rgba(158, 147, 85, 0.892), 66px 66px rgba(159, 147, 85, 0.895), 67px 67px rgba(159, 148, 85, 0.898), 68px 68px rgba(159, 148, 86, 0.901), 69px 69px rgba(160, 148, 86, 0.904), 70px 70px rgba(160, 149, 86, 0.907), 71px 71px rgba(161, 149, 86, 0.91), 72px 72px rgba(161, 149, 86, 0.913), 73px 73px rgba(161, 150, 87, 0.916), 74px 74px rgba(162, 150, 87, 0.919), 75px 75px rgba(162, 150, 87, 0.922), 76px 76px rgba(162, 151, 87, 0.925), 77px 77px rgba(163, 151, 87, 0.928), 78px 78px rgba(163, 151, 88, 0.931), 79px 79px rgba(163, 152, 88, 0.934), 80px 80px rgba(163, 152, 88, 0.937), 81px 81px rgba(164, 152, 88, 0.94), 82px 82px rgba(164, 152, 88, 0.943), 83px 83px rgba(164, 153, 89, 0.946), 84px 84px rgba(165, 153, 89, 0.949), 85px 85px rgba(165, 153, 89, 0.952), 86px 86px rgba(165, 154, 89, 0.955), 87px 87px rgba(166, 154, 89, 0.958), 88px 88px rgba(166, 154, 89, 0.961), 89px 89px rgba(166, 154, 90, 0.964), 90px 90px rgba(167, 155, 90, 0.967), 91px 91px rgba(167, 155, 90, 0.97), 92px 92px rgba(167, 155, 90, 0.973), 93px 93px rgba(167, 155, 90, 0.976), 94px 94px rgba(168, 156, 90, 0.979), 95px 95px rgba(168, 156, 91, 0.982), 96px 96px rgba(168, 156, 91, 0.985), 97px 97px rgba(168, 157, 91, 0.988), 98px 98px rgba(169, 157, 91, 0.991), 99px 99px rgba(169, 157, 91, 0.994), 100px 100px rgba(169, 157, 91, 0.997);
+}
+
+@media screen and (max-width: 600px) {
+    .tabs__item h2 span {
+        font-size: 24px;
+    }
+
+    .tabs__num {
+        font-size: 120px;
+    }
+}
+
+/*美食典故 page*/
+.food-and-food {
+    background: url("../images/body_bg.png") repeat;
+}
+.food-and-food a:hover{
+    color: rgb(51, 122, 183);
+}
+
+#food-and-food {
+    margin-top: 70px;
+}
+
+#food-and-food .panel-default > .panel-heading {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    border-color: rgb(69, 90, 100);
+    background: rgb(69, 90, 100);
+}
+
+#food-and-food .panel:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#food-and-food img {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+#food-and-food .info {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    line-height: 25px;
+    max-height: 75px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#food-and-food .food-tabs {
+    height: 450px;
+}
+
+.posts-nav-wrap {
+    text-align: center;
+    width: 100%;
+    height: 53px;
+    margin: 20px 0 0 0;
+    display: inline-block;
+    clear: both;
+}
+
+.posts-nav li {
+    margin: 0 13px 0 0;
+    display: inline-block;
+}
+
+.posts-nav li a {
+    text-indent: -9999em;
+    text-align: left;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    -moz-transition: all .20s ease-in-out;
+    -webkit-transition: all .20s ease-in-out;
+    transition: all .20s ease-in-out;
+}
+
+.posts-nav .next a {
+    background: #999999 url(../images/ico-pagination-arrow-next.png) no-repeat center;
+    width: 144px;
+    height: 53px;
+    line-height: 53px;
+}
+
+.posts-nav .next a:hover {
+    text-decoration: none;
+    background: #ffe900 url(../images/ico-pagination-arrow-next.png) no-repeat 110px center;
+}
+
+.posts-nav .previous a {
+    width: 64px;
+    height: 53px;
+    line-height: 53px;
+    background-color: #999999;
+    background-image: url(../images/ico-pagination-arrow-previous.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.posts-nav .previous a:hover {
+    text-decoration: none;
+    background: #ffe900 url(../images/ico-pagination-arrow-previous.png) no-repeat 12px center;
+}
+
+/*美食典故 超大面板*/
+#food-and-food .jumbotron {
+    padding-top: 10px;
+    background: rgb(222, 236, 223);
+}
+
+#food-and-food .jumbotron h2 {
+    text-align: center;
+}
+
+#food-and-food .news-jj {
+
+    padding: 0 40px;
+    position: relative;
+}
+
+#food-and-food .news-jj-main {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#food-and-food .news-jj .qute-l {
+    left: 0;
+    top: 0;
+    background: url(../images/yh.png) 0px 0px no-repeat;
+}
+
+#food-and-food .news-jj .qute-r {
+    right: 0;
+    bottom: 0;
+    background: url(../images/yh.png) 0px -30px no-repeat;
+}
+
+#food-and-food .news-jj .newsKh {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    position: absolute;
+}
+
+#food-and-food .detail-list {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#food-and-food .detail-textNub {
+    display: block;
+    height: 5px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+#food-and-food .detail-textNub .textNub {
+    position: absolute;
+    top: -28px;
+    display: inline-block;
+    width: 45px;
+    height: 68px;
+    background: url(../images/vipic.png) 0px 0px no-repeat;
+    text-align: center;
+    line-height: 68px;
+    color: #fff;
+    font-size: 22px;
+    font-family: Verdana, Geneva, sans-serif
+}
+
+#food-and-food .detail-box {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#food-and-food .detail-box h2 {
+    height: 30px;
+    line-height: 30px;
+    color: #fa4e68;
+    font-size: 20px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#food-and-food .detail-box p {
+    font-size: 14px;
+    word-wrap: normal;
+    padding-bottom: 10px;
+    word-break: normal;
+}
+
+/*
+健康指南 page
+*/
+#intel-health-guide{
+    margin-top: 80px;
+}
+
+.plugthumb {
+    position: relative;
+    float: left;
+    width: 310px;
+    height: 350px;
+    margin-left: 2%;
+    margin-top: 5px;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2)
+}
+.plugthumb:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.plugthumb:after, .plugthumb:before {
+    content: " ";
+    display: table
+}
+.plugthumb:after {
+    clear: both;
+    background: url(../images/shadow-left.png) bottom left no-repeat;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    bottom: -11px;
+    left: -3px
+}
+.plugthumb:before {
+    background: url(../images/shadow-right.png) bottom center no-repeat;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    bottom: -9px;
+    right: -6px
+}
+.plugthumb .tp {
+    width: 310px;
+    height: 280px;
+    overflow: hidden
+}
+
+.plugthumb .tp figure {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer
+
+}
+
+.plugthumb .tp figure img {
+    border-radius: 6px;
+    position: relative;
+    display: block;
+    opacity: 1
+}
+
+.plugthumb .tp figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.plugthumb .tp figure figcaption::after, .plugthumb .tp figure figcaption::before {
+    pointer-events: none
+}
+
+.plugthumb .tp figure a, .plugthumb .tp figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.plugthumb .tp figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0
+}
+
+.plugthumb .tp figure h2 {
+    word-spacing: -.15em;
+    font-weight: 100
+}
+
+.plugthumb .tp figure h2 span {
+    font-weight: 100
+}
+
+.plugthumb .tp figure p:nth-child(odd){
+    margin-top: 45px;
+}
+
+.plugthumb .tp img {
+    display: block;
+    position: relative
+}
+
+
+.plugthumb .tp p {
+    font-size: 14px;
+    line-height: 1.42857143;
+    position: relative;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center
+}
+
+.plugthumb .plug-info {
+    height: 70px;
+    padding: 15px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #fff;
+    color: #8E8E8E;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee
+}
+
+.plugthumb .plug-info .plug-title {
+    font-size: 1.2em;
+    height: 42px;
+    line-height: 18px
+}
+.plugthumb .plug-info .plug-title a:hover{
+    color:#ff3232;
+    transition: color .5s;
+}
+
+
+figure.effect-bubba {
+    background: rgba(53, 172, 197, 1)
+}
+
+figure.effect-bubba img {
+    opacity: .7;
+    -webkit-transition: opacity .35s;
+    transition: opacity .35s
+}
+
+figure.effect-bubba:hover img {
+    opacity: .4
+}
+
+figure.effect-bubba figcaption::after, figure.effect-bubba figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s
+}
+
+figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1)
+}
+
+figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0)
+}
+
+figure.effect-bubba h2 {
+    padding-top: 30%;
+    -webkit-transition: -webkit-transform .35s;
+    transition: transform .35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0)
+}
+
+figure.effect-bubba p {
+    padding: 10px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0)
+}
+
+figure.effect-bubba:hover figcaption::after, figure.effect-bubba:hover figcaption::before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+figure.effect-bubba:hover h2, figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}

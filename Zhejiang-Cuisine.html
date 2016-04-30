@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+    <title>中国八大菜系之浙菜</title>
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/easing.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id="body" style="overflow-y: visible;">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <figure class="icon">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="欢迎欢迎热烈欢迎">
+                    </a>
+                </figure>
+                <a href="Zhejiang-Cuisine.html" class="navbar-brand">八大菜系之<b>浙菜</b></a>
+            </div>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav-link">
+                <li class="active">
+                    <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a></a>
+                </li>
+
+                <!-- <li>
+                    <a href="cooking-culture-of-China.html">
+                        <i class="icon-food"></i> 中国吃文化
+                    </a>
+                </li> -->
+                <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                </li>
+                <li><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div id="eight_btn_section">
+    <div class="container-fluid content">
+        <div class="row eight_btn">
+            <div class="col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Shandong-cuisine.html" type="button" class="btn btn-info typeOfBtn">鲁菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Sichuan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">川菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Jiangsu-Cuisine.html" type="button" class="btn btn-info typeOfBtn">苏菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-4">
+                <a href="Guangzhou-Cuisine.html" type="button" class="btn btn-info typeOfBtn">粤菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Zhejiang-Cuisine.html" type="button" class="btn btn-info active">浙菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Fujian-Cuisine.html" type="button" class="btn btn-info typeOfBtn">闽菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Hunan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">湘菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Anhui-Cuisine.html" type="button" class="btn btn-info typeOfBtn">徽菜</a>
+            </div>
+            <div class="col-md-2 col-sm-2 "></div>
+        </div>
+    </div>
+</div>-->
+<!--页面主体-->
+<div id="food-section" class="Zhejiang-Cuisine">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class='all'>
+                    <div class='box'>
+                        <a href='Shandong-cuisine.html'>
+                            <div class='card bg-01'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 鲁菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Sichuan-Cuisine.html'>
+                            <div class='card bg-02'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 川菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Jiangsu-Cuisine.html'>
+                            <div class='card bg-03'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 苏菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Guangzhou-Cuisine.html'>
+                            <div class='card bg-04'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 粤菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Zhejiang-Cuisine.html'>
+                            <div class='card bg-05 active'><span class='card-content'><span
+                                    class="glyphicon glyphicon-map-marker"></span> 浙菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Fujian-Cuisine.html'>
+                            <div class='card bg-06'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 闽菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Hunan-Cuisine.html'>
+                            <div class='card bg-07'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 湘菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Anhui-Cuisine.html'>
+                            <div class='card bg-08'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 徽菜</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧鲁菜介绍页面-->
+            <div class="col-md-10">
+                <div class="row ">
+                    <ol class="breadcrumb col-md-12">
+                        <li><!--<span class="glyphicon glyphicon-map-marker"></span>--><i class="icon-tint"></i> 当前位置：</li>
+                        <li><a href="home.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="index.html"><i class="icon-coffee"></i> 八大菜系</a></li>
+                        <li class="active">浙菜</li>
+                    </ol>
+                </div>
+                <!--百度百科和主要流派-->
+                <section id="section1">
+                    <h4>（一）百度百科</h4>
+
+                    <p>
+                        浙江菜，简称浙菜，是中国汉族八大菜系之一，其地山清水秀，物产丰富佳肴美，故谚曰：“上有天堂，下有苏杭”。浙江省位于我国东海之滨，北部水道成网，素有鱼米之乡之称。西南丘陵起伏，盛产山珍野味。东部沿海渔场密布，水产资源丰富，有经济鱼类和贝壳水产品500余种，总产值居全国之首，物产丰富，佳肴自美，特色独具，有口皆碑。</p>
+                </section>
+                <section class="row">
+                    <h4 id="section2">（二）主要流派</h4>
+
+                    <div class="col-md-5 col-sm-5" id="div">
+                        <svg id="graph" width="100%">
+                        </svg>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div>
+                            <p><a data-toggle="tooltip" data-placement="top" class="link"
+                                  title="去百度百科查看详情"
+                                  href="http://baike.baidu.com/link?url=zxwt6A6KbznCAjt_i9R4MuHGR1JfWzPMUprd0ylE54TjFTlCH1KWZUaZN9ywA2hog1O5LP763GiIAepTqASRwa"
+                                  target="_blank"><b>杭州菜</b></a>，源远流长，是浙江饮食文化的重要组成部分，属于浙江菜的重要流派。近年来，杭州餐饮市场发展迅速，涌现出许多在全国有相当知名度的菜肴。这些新菜博采众长，精工细作，无论是在做功还是色香味上，都超越了传统的浙菜。
+
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情"
+                                   href="http://baike.baidu.com/view/2005247.htm"
+                                   target="_blank"><b>绍兴菜</b></a>，是富有江南地区汉族水乡文化的风味名菜。是汉族饮食文化的重要组成部分。绍兴菜以淡水鱼虾河鲜及家禽、豆类为烹调主料，注重香酥绵糯、原汤原汁、轻油忌辣、汁味浓重，而且常用鲜料配以腌腊食品同蒸同炖，配上绍兴黄酒，醇香甘甜，回味无穷。
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情" target="_blank" href="http://baike.baidu.com/view/254258.htm">
+                                    <b>宁波菜</b></a>，又叫甬帮菜，是汉族饮食文化的重要组成部分。擅长烹制海鲜，鲜咸合一，以蒸、烤、炖等技法为主，讲究鲜嫩软滑、原汁原味，色泽较浓。宁波菜以咸、鲜、臭闻名，宁波菜不能成为一个独立的菜系，可是在浙菜中也是非常具有特色的一个品种。
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情" target="_blank"
+                                   href="http://baike.baidu.com/view/331432.htm?fromtitle=%E6%B8%A9%E5%B7%9E%E8%8F%9C&fromid=3682114&type=syn"><b>温州菜</b></a>，现名瓯菜，是汉族八大菜系浙菜的五个流派之一，温州菜系的代称。因温州古名东瓯，建国后，为了提高温州菜的知名度，经过餐饮专家共同研究，将温州菜改称“瓯菜”。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--发展历史-->
+
+                <section id="section3">
+                    <h4>（三）发展历史</h4>
+
+                    <div class="panel panel-default" id="history-info">
+                        <div class="panel-body">
+                            <table class="table table-condensed">
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-2 first-Tr" id="section3-1"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>春秋时期</p>
+                                    </td>
+                                    <td class="first-Tr"><p>
+                                        吴越春秋时期，春秋末年，越国定都“会稽”（今绍兴市），利用其优越的地理环境和资源，在中原各国的经济、文化和技术的影响下，经过“十年生聚，十年教训”，使钱塘江流域的农业、商业、手工业生产得到了迅速的发展，奠定了坚实的物质基础。越王勾践为复国，加紧军备，并在今绍兴市的稽山，过去称“鸡山”，办起了大型的养鸡场，为前线准备作战粮草用鸡。故浙菜中最古的菜要首推绍兴名菜“清汤越鸡”。其次是杭州的“宋嫂鱼羹”，出自“宋五嫂鱼羹”，至今也有880年历史。从杭州近郊的良渚和浙东的余姚河姆渡两处人类活动的古遗址中发现，从猪、牛、羊、鸡、鸭等骨骸中证明，浙菜的烹饪原料在距今四五千年前已相当丰富。东坡肉、咸件儿、蜜汁火方、叫化童鸡等传统名菜均离不开这些烹饪原料。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-2"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>南北朝以后
+                                    </p></td>
+                                    <td><p>南北朝以后，江南几百年免于战争，隋唐开通京杭大运河，宁波、温州二地海运副业的拓展，对外经济贸易交往频繁，尤其是五代（公元
+                                        907年）吴越钱镠建都杭州，经济文化益显发达，人口剧增，商业繁荣，曾有“骈墙二十里，开肆三万室”之称。经济的发展，贸易的往来，无不为烹饪事业的发展和崛起产生巨大的推动力，使当时的宫廷菜肴和民间饮食等烹饪技艺得到了长足的发展。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-3"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>南宋
+                                    </p></td>
+                                    <td><p>
+                                        南宋建都杭州，浙菜在“南食”中占主要地位。被称为中华民族第二次迁移的宋室南渡，对进一步推动以杭州为中心的南方菜肴的创新与发展起到了很大作用。在此次大迁移中，北方的名流达官贵人和劳动人民大批南移，卜居浙江，把北方的京都烹饪文化带到了浙江，使南北烹饪技艺广泛交流，饮食业兴旺繁荣，烹饪技术不断提高，名菜名馔应运而生。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-4"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>如今</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            浙江菜与全国各大菜系一样，得到了迅速的发展。浙江省还成立了专门培养烹饪人才的各类学校和烹饪研究机构，广泛地烹饪文化交流，进一步完善了饮食业的设备和条件。</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!--经典菜品-->
+                <section id="section4">
+                    <!--<div class="col-md-12">-->
+                    <h4>（四）经典菜品</h4>
+
+                    <div class="main-posts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="device" class="gridalicious">
+                                    <div class="galcolumn">
+                                        <!--菜品图片展示-1-->
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Zhejiang-cuisine/1.jpg" alt="东坡肉">
+
+                                                <div class="title-over">
+                                                    <h4><a>东坡肉</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=QX5-X-19KtzyLg2tgHw-5ZgxgRgHTteydbZxY62DS3sUGH11Hg57pQsfW6oq4p2j2lZbHiyfr_9_ELzDFA9Kea"
+                                                                target="_blank">东坡肉</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            东坡肉又名滚肉、红烧肉是江南地区汉族传统名菜，属浙菜系，以猪肉为主要食材。菜品薄皮嫩肉，色泽红亮，味醇汁浓，酥烂而形不碎，香糯而不腻口。
+                                                            东坡肉，色、香、味俱全，深受人们喜爱。慢火，少水，多酒，是制作这道菜的诀窍。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Zhejiang-cuisine/2.jpg" alt="荷叶粉蒸肉">
+
+                                                <div class="title-over">
+                                                    <h4><a>荷叶粉蒸肉</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=i28MFT6-UM7dd2dyVtI1e56IHuQFuS6CJ9Ddx8kl3tQvKDYuDThEOEpcdxGgbxUgXwF6K-7cp5a6QqcaMgXRfq"
+                                                                target="_blank">荷叶粉蒸肉</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            荷叶粉蒸肉是一款享有较高声誉的汉族名菜。在清末，相传其名与“西湖十景”的“曲院风荷”有关。它是用当时杭州的鲜荷叶，将炒熟的米粉和经调味的猪肉裹包起来蒸制而成，其味清香，鲜肥软糯而不腻，夏天食用很适合胃口。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Zhejiang-cuisine/3.jpg" alt="叫化童鸡">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">叫化童鸡</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=ctRHhIABydF_whIRe6RSui164POBZ-4H98lBFG92h_S5ZwtH3HRyjAzllOk9DvrQVCeu9GVIAngrsGGORnRar_"
+                                                                target="_blank">叫化童鸡</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            叫化童鸡，浙江杭州汉族名菜，又称黄泥煨鸡。至今有300多年的历史。传说古时有一叫花子弄到一只鸡，可又缺锅少灶。饥饿难忍之际，他便仿效烤红薯的方法，用烂泥将鸡涂包起来，放在石块垒成的“灶”上拾点干柴煨烤，过一会儿泥干鸡熟，他随手拿起放在地上，鸡毛脱落，顿时香气四溢。这种泥烤技法传入菜馆、酒楼，厨师们又不断改进，在煨烤的泥巴中加入绍酒，将鸡包以西湖荷叶烤制，使荷叶的清香和母鸡的鲜香融为一体，历年延传下来，“叫化童鸡”的名声远扬。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Zhejiang-cuisine/4.jpg" alt="油焖春笋">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">油焖春笋</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/link?url=g11-G5voXUloQthTGSTOp_BkglfKNhUsbthEPdU5zsh0besAN7dxZgdXDMIthjrBeh_HqP3yq6CKhG81mrVsua"
+                                                                target="_blank">油焖春笋</a></h4>
+
+                                                        <p>
+                                                            “油焖春笋”是一道汉族传统风味菜肴，属浙菜系。它选用清明前后出土的嫩春笋，以重油、重糖烹制而成，色泽红亮，鲜嫩爽口，鲜咸而带甜味，百吃不厌。1956年被浙江省认定为36
+                                                            种杭州名菜之一。2012年入选纪录片《舌尖上的中国》第一集《自然的馈赠》系列美食之一。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Zhejiang-cuisine/5.jpg" alt="西湖醋鱼">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">西湖醋鱼</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/9265.htm"
+                                                                target="_blank">西湖醋鱼</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            西湖醋鱼也称为叔嫂传珍，是浙江杭州传统汉族风味名菜。据传在宋朝，叔嫂二人为兄、为夫报仇屡遭阻拦而体会到生活酸甜之味，创出的这道菜。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Zhejiang-cuisine/6.jpg" alt="爆墨鱼卷">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">爆墨鱼卷</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/137154.htm"
+                                                                target="_blank">爆墨鱼卷</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            四喜丸子是经典的汉族传统名菜之一，属于豫菜菜系。由四个色、香、味俱佳的肉丸组成，寓人生福、禄、寿、喜四大喜事。常用于喜宴、寿宴等宴席中的压轴菜，以取其吉祥之意。四喜丸子从外观上来说，由四个较大的肉丸以及其他辅料组成。四喜丸子做法与狮子头基本一致，只是四喜丸子限用四个肉丸。主要用料为猪肉馅、鸡蛋、葱花等。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-12 more-info">-->
+                                <!--<a type="button" class="btn btn-info"-->
+                                <!--href="http://www.360doc.com/content/14/0929/01/18960088_413124870.shtml"-->
+                                <!--target="_blank">查看十大经典鲁菜</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </section>
+            </div>
+            <!--右侧锚点介绍-->
+            <div class="col-md-1">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked left-nav">
+                        <li class="active"><a href="#body">百度百科</a></li>
+                        <li><a href="#section2">主要流派</a></li>
+                        <li><a href="#section3">发展历史</a></li>
+                        <li><a href="#section4">经典菜品</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!--返回顶部按钮-->
+<div class="footer-section">
+    <div class="container">
+        <a href="javascript:void(0)" id="toTop" style="display: none;"></a>
+    </div>
+</div>
+<script type="text/javascript" src="javascript/d3.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.grid-a-licious.min.js"></script>
+<script type="text/javascript" src="javascript/global.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        ///浙菜的成份结构
+        var svg = d3.select("#graph");
+        var s = document.getElementById("div").clientWidth;
+        var width = s;
+        console.log("宽度" + s);
+        var height = 320;
+        var nodes = [{name: "浙江菜"},
+            {name: "杭州菜"},
+            {name: "宁波菜"},
+            {name: "绍兴"},
+            {name: "温州菜"}
+        ];
+        var edges = [{source: 0, target: 1},
+            {source: 0, target: 2},
+            {source: 0, target: 3},
+            {source: 0, target: 4}
+        ];
+        var force = d3.layout.force()
+                .nodes(nodes)           //设定节点数组
+                .links(edges)           //设定连线数组
+                .size([width, height])   //设定作用范围
+                .linkDistance(150)       //设定连线的距离
+                .charge(-400);          //设定节点的电荷数
+        force.start();//开启布局计算
+        console.log(nodes);
+        console.log(edges);
+        var color = d3.scale.category20();
+
+        //绘制连线
+        var lines = svg.selectAll(".forceLine")
+                .data(edges)
+                .enter()
+                .append("line")
+                .attr("class", "forceLine")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 1);
+        //绘制节点
+        var circles = svg.selectAll(".forceCircles")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "forceCircle")
+                .attr("r", 35)
+                .style("fill", function (d, i) {
+                    return color(i);
+                })
+                .call(force.drag);//允许拖动
+        //绘制文字
+        var texts = svg.selectAll(".forceText")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("class", "forceText")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("dx", "-1.2em")
+                .attr("dy", ".3em")
+                .text(function (d) {
+                    return d.name;
+                });
+
+        force.on("tick", function () {
+            //更新连线的终点坐标
+            lines.attr("x1", function (d) {
+                return d.source.x;
+            });
+            lines.attr("y1", function (d) {
+                return d.source.y;
+            });
+            lines.attr("x2", function (d) {
+                return d.target.x;
+            });
+            lines.attr("y2", function (d) {
+                return d.target.y;
+            });
+            //更新节点坐标
+            circles.attr("cx", function (d) {
+                return d.x;
+            });
+            circles.attr("cy", function (d) {
+                return d.y;
+            });
+            //更新文字节点的坐标
+            texts.attr("x", function (d) {
+                return d.x;
+            });
+            texts.attr("y", function (d) {
+                return d.y;
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

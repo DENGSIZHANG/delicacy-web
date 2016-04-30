@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+    <title>中国八大菜系之粤菜</title>
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/easing.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id="body" style="overflow-y: visible;">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <figure class="icon">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="欢迎欢迎热烈欢迎">
+                    </a>
+                </figure>
+                <a href="" class="navbar-brand">八大菜系之<b>粤菜</b></a>
+            </div>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav-link">
+                <li class="active">
+                    <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a></a>
+                </li>
+
+                <!-- <li>
+                    <a href="cooking-culture-of-China.html">
+                        <i class="icon-food"></i> 中国吃文化
+                    </a>
+                </li> -->
+                <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                </li>
+                <li><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div id="eight_btn_section">
+    <div class="container-fluid content">
+        <div class="row eight_btn">
+            <div class="col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Shandong-cuisine.html" type="button" class="btn btn-info typeOfBtn">鲁菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Sichuan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">川菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Jiangsu-Cuisine.html" type="button" class="btn btn-info typeOfBtn">苏菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-4">
+                <a href="Guangzhou-Cuisine.html" type="button" class="btn btn-info active">粤菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Zhejiang-Cuisine.html" type="button" class="btn btn-info typeOfBtn">浙菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Fujian-Cuisine.html" type="button" class="btn btn-info typeOfBtn">闽菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Hunan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">湘菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Anhui-Cuisine.html" type="button" class="btn btn-info typeOfBtn">徽菜</a>
+            </div>
+            <div class="col-md-2 col-sm-2 "></div>
+        </div>
+    </div>
+</div>-->
+<!--页面主体-->
+<div id="food-section" class="Guangzhou-cuisine">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class='all'>
+                    <div class='box'>
+                        <a href='Shandong-cuisine.html'>
+                            <div class='card bg-01'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 鲁菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Sichuan-Cuisine.html'>
+                            <div class='card bg-02'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 川菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Jiangsu-Cuisine.html'>
+                            <div class='card bg-03'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 苏菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Guangzhou-Cuisine.html'>
+                            <div class='card bg-04 active'><span class='card-content'><span
+                                    class="glyphicon glyphicon-map-marker"></span> 粤菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Zhejiang-Cuisine.html'>
+                            <div class='card bg-05'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 浙菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Fujian-Cuisine.html'>
+                            <div class='card bg-06'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 闽菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Hunan-Cuisine.html'>
+                            <div class='card bg-07'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 湘菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Anhui-Cuisine.html'>
+                            <div class='card bg-08'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 徽菜</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧鲁菜介绍页面-->
+            <div class="col-md-10">
+                <div class="row ">
+                    <ol class="breadcrumb col-md-12">
+                        <li><!--<span class="glyphicon glyphicon-map-marker"></span>--><i class="icon-tint"></i> 当前位置：</li>
+                        <li><a href="home.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="index.html"><i class="icon-coffee"></i> 八大菜系</a></li>
+                        <li class="active">粤菜</li>
+                    </ol>
+                </div>
+                <!--百度百科和主要流派-->
+                <section id="section1">
+                    <h4>（一）百度百科</h4>
+
+                    <p>
+                        粤菜即广东菜，狭义指广州府菜，也就是一般指广州菜，含南番顺），是中国汉族四大菜系之一，发源于岭南，广义由广州菜、客家菜、潮州菜发展而成，以潮州菜为代表，故上海世博会以潮州菜作为中国四大菜系粤菜的唯一代表。是起步较晚的菜系，但它影响深远，世界各国的中菜馆，多数是以粤菜为主，在世界各地粤菜与法国大餐齐名，国外的中餐基本上都是粤菜。因此有不少人，认为粤菜是海外中国的代表菜系。
+                    </p>
+                </section>
+                <section class="row">
+                    <h4 id="section2">（二）主要流派</h4>
+
+                    <div class="col-md-5 col-sm-5" id="div">
+                        <svg id="graph" width="100%">
+
+                        </svg>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div>
+                            <p><a data-toggle="tooltip" data-placement="top" class="link"
+                                  title="去百度百科查看详情"
+                                  href="http://baike.baidu.com/view/99731.htm"
+                                  target="_blank"><b>广州菜</b></a>，又称广府菜，是汉族传统饮食文化最重要的流派之一，粤菜的代表，发祥地广州，大凡用粤方言的地区都属广州菜文化圈。主要流行于广东珠江三角洲、香港、澳门、广西东部等地区。
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情"
+                                   href="http://baike.baidu.com/view/62798.htm"
+                                   target="_blank"><b>潮州菜</b></a>，简称潮菜，香港称“打冷”。是汉族传统饮食文化的重要组成部分，潮州菜可追溯到汉。盛唐之后，受中原烹饪技艺的影响，发展很快时至今日，潮州菜已经发展成为独具潮文化特色、驰名海内外的我国名菜之一。
+                                <a data-toggle="tooltip" data-placement="top" class="link"
+                                   title="去百度百科查看详情" target="_blank"
+                                   href="http://baike.baidu.com/view/26687.htm"><b>客家菜</b></a>，是汉族饮食文化重要组成部分，主要流行于广东的深圳、惠州、河源、梅州；江西的赣州；福建的龙岩、三明、漳州；广西的贺州、玉林；台湾新竹县、苗栗县等地。客家菜肴风味的形成跟古代客家民系的形成是分不开的，如像客家话保留着中州古韵一样，客家菜同样也保留着中州传统的生活习俗特色。
+
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--发展历史-->
+
+                <section id="section3">
+                    <h4>（三）发展历史</h4>
+
+                    <div class="panel panel-default" id="history-info">
+                        <div class="panel-body">
+                            <table class="table table-condensed">
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-2 first-Tr" id="section3-1"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>起源</p>
+                                    </td>
+                                    <td class="first-Tr"><p>
+                                        粤菜源远流长，历史悠久。它同其他地区的饮食和菜系一样，都有着中国饮食文化的共同性。早在远古，岭南古越族就与中原楚地有着密切的交往。随着历史变迁和朝代更替，许多中原人为逃避战乱而南渡，汉越两族日渐融合。中原文化的南移，中原饮食制作的技艺、炊具、食具和百越农渔丰富物产结合，这就是粤式饮食的起源。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-2"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>汉代以后
+                                    </p></td>
+                                    <td><p>
+                                        汉代以后，广州成为中西海路的交通枢纽；唐代外商大多聚集在羊城，商船结队而至。当时广州地区的经济与内陆各地相比，发展较快。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-3"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>唐宋时期
+                                    </p></td>
+                                    <td><p>
+                                        南宋以后，粤菜的技艺和特点日趋成熟。这同宋朝南迁，众多御厨和官府厨师云集于粤，特别集中于羊城有关。唐代开始，广州成为我国主要的进出贸易口岸，是世界有名的港口。宋、元之后，广州成为内外贸易集中的口岸和港口城市，商业日益兴旺，带动了饮食服务作为一个商业行业发展起来，为粤式饮食特别是粤菜的成长提供了一个非常重要的条件和场所。
+                                    </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-4"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>明清两代
+                                    </p></td>
+                                    <td><p>
+                                        是粤菜、粤点、粤式饮食真正的成熟和发展时期。这时的广州已经成为一座商业大城市，粤菜、粤点和粤式饮食真正成为了一个体系。闹市通衡遍布茶楼、酒店、餐馆和小食店，各个食肆争奇斗艳，食品之丰，款式之多，世人称绝，渐渐有“食在广州”之说。
+                                    </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-5"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>如今
+                                    </p></td>
+                                    <td><p>
+                                        粤菜的影响较为广泛。据一些报刊介绍，美国有中国餐馆的近万家；英国有4000家；法国、荷兰各有二千多家；日本不下数千家。这些地方的中国餐馆，多数是粤式茶楼、菜馆，生意很旺。澳大利亚的悉尼市，在“唐人街”的影响下，饮茶已成为一个专门名词，凡到悉尼市游览的人，都以一到“唐人街”享受一下粤式饮茶用餐的韵味为时尚。粤菜的其独特的清淡风味，独领风骚，以“食在广州”的声誉驰名中外。
+                                    </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!--经典菜品-->
+                <section id="section4">
+                    <!--<div class="col-md-12">-->
+                    <h4>（四）经典菜品</h4>
+
+                    <div class="main-posts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="device" class="gridalicious">
+                                    <div class="galcolumn">
+                                        <!--菜品图片展示-1-->
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/1.jpg" alt="白切贵妃鸡">
+
+                                                <div class="title-over">
+                                                    <h4><a>白切贵妃鸡</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/4885079.htm"
+                                                                target="_blank">白切贵妃鸡</a>
+                                                        </h4>
+
+                                                        <p>粤菜经典凉菜。以贵妃鸡为原料，肉质鲜美，制作方法特别，蘸酱食用即可。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/2.jpg" alt="佛手排骨">
+
+                                                <div class="title-over">
+                                                    <h4><a>佛手排骨</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/44986.htm"
+                                                                target="_blank">佛手排骨</a>
+                                                        </h4>
+
+                                                        <p>佛手排骨是广东省传统的汉族名菜，属于粤菜系。特色佳肴，形似佛手，外香里嫩，鲜美可口。</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/3.jpg" alt="芙蓉虾">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">芙蓉虾</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/subview/1247133/1247133.htm"
+                                                                target="_blank">芙蓉虾</a></h4>
+
+                                                        <p>
+                                                            芙蓉虾是一道色香味俱全的汉族名菜，属于粤菜系。主料为大虾、鸡蛋等。葱姜洗净，切末备用。虾去壳，留下尾端，去肠泥，洗净，放入碗中，加米酒和葱末、姜末，腌10分钟。鸡蛋打入碗中搅均，放入虾沾匀蛋汁，再沾裹面包糠备用。锅里倒油，待油5成热时放入大虾，炸至金黄色即可捞出。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/4.jpg" alt="东江盐焗鸡">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">东江盐焗鸡</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/60185.htm"
+                                                                target="_blank">东江盐焗鸡</a></h4>
+
+                                                        <p>东江盐焗鸡是广东传统名菜。主料是项鸡，主要烹饪工艺是盐焗。
+                                                            盐焗鸡制法独特，味香浓郁，皮爽肉滑，以沙姜油盐佐食，风味极佳。色泽微黄，皮脆肉嫩，骨肉鲜香，风味诱人，是宴会上常用的佳肴。</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/5.jpg" alt="雄鹰展翅">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">雄鹰展翅</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/139867.htm#2"
+                                                                target="_blank">雄鹰展翅</a>
+                                                        </h4>
+
+                                                        <p>造型逼真，可食性与欣赏性并举</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/6.jpg" alt="八宝冬瓜盅">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">八宝冬瓜盅</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/99728.htm"
+                                                                target="_blank">八宝冬瓜盅</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            八宝冬瓜盅是家喻户晓的传统经典粤菜之一，历久不衰，以冬瓜作为容器炖汤，故得此名。成菜后的汤中有冬瓜的清香，冬瓜肉里有馅料的味道，互相映衬。此菜式亦是夏令一种汤食，美观悦目，集多种原料为一馔，口感各异，清淡味鲜，为夏令之消暑佳品，解腻、解酒最佳。 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/7.jpg" alt="红烧乳鸽">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">红烧乳鸽</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/424677.htm"
+                                                                target="_blank">红烧乳鸽</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            红烧乳鸽是广东名菜。乳鸽的肉厚而嫩，滋养作用较强，鸽肉滋味鲜美，肉质细嫩，富含粗蛋白质和少量无机盐等营养成分。先把约25至28日的鸽子用卤水浸至入味，再放进滚油生炸。由于皮脆肉滑，甘香鲜美，幼嫩可口，油而不腻，色香味俱佳，被推为上品佳肴，极具广府特色。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Guangzhou-cuisine/8.jpg" alt="老火靓汤">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">老火靓汤</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/151548.htm"
+                                                                target="_blank">老火靓汤</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            老火汤又称“广府汤”，即广府人传承数千年的食补养生秘方，以慢火煲煮中华老火靓汤，火候足，时间长，既取药补之效，又取入口之甘甜。广府人喝老火汤的历史由来已久，这与广州湿热的气候密切相关，而且广州汤的种类会随季节转换而改变，长年以来，煲汤就成了广州人生活中必不可少的一个内容，与广州凉茶一道当仁不让地成了广州饮食文化的标志。俗语说：“宁可食无菜，不可食无汤。”更有人编了句“不会吃的吃肉，会吃的喝汤”的说法。先上汤，后上菜，几乎成为广州宴席的既定格局。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-12 more-info">-->
+                                <!--<a type="button" class="btn btn-info"-->
+                                <!--href="http://www.360doc.com/content/14/0929/01/18960088_413124870.shtml"-->
+                                <!--target="_blank">查看十大经典苏菜</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </section>
+            </div>
+            <!--右侧锚点介绍-->
+            <div class="col-md-1">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked left-nav">
+                        <li class="active"><a href="#body">百度百科</a></li>
+                        <li><a href="#section2">主要流派</a></li>
+                        <li><a href="#section3">发展历史</a></li>
+                        <li><a href="#section4">经典菜品</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--返回顶部按钮-->
+<div class="footer-section">
+    <div class="container">
+        <a href="javascript:void(0)" id="toTop" style="display: none;"></a>
+    </div>
+</div>
+<script type="text/javascript" src="javascript/d3.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.grid-a-licious.min.js"></script>
+<script type="text/javascript" src="javascript/global.js"></script>
+<!--瀑布流加载图片-->
+
+<script type="text/javascript">
+    $(function () {
+        ///鲁菜的成份结构
+        var svg = d3.select("#graph");
+        var s = document.getElementById("div").clientWidth;
+        var width = s;
+        console.log("宽度" + s);
+        var height = 320;
+        var nodes = [{name: "粤菜"},
+            {name: "广州菜"},
+            {name: "潮州菜"},
+            {name: "客家菜"}
+        ];
+        var edges = [{source: 0, target: 1},
+            {source: 0, target: 2},
+            {source: 0, target: 3}
+        ];
+        var force = d3.layout.force()
+                .nodes(nodes)           //设定节点数组
+                .links(edges)           //设定连线数组
+                .size([width, height])   //设定作用范围
+                .linkDistance(150)       //设定连线的距离
+                .charge(-400);          //设定节点的电荷数
+        force.start();//开启布局计算
+        console.log(nodes);
+        console.log(edges);
+        var color = d3.scale.category20();
+
+        //绘制连线
+        var lines = svg.selectAll(".forceLine")
+                .data(edges)
+                .enter()
+                .append("line")
+                .attr("class", "forceLine")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 1);
+        //绘制节点
+        var circles = svg.selectAll(".forceCircles")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "forceCircle")
+                .attr("r", 35)
+                .style("fill", function (d, i) {
+                    return color(i);
+                })
+                .call(force.drag);//允许拖动
+        //绘制文字
+        var texts = svg.selectAll(".forceText")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("class", "forceText")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("dx", "-1.2em")
+                .attr("dy", ".3em")
+                .text(function (d) {
+                    return d.name;
+                });
+
+        force.on("tick", function () {
+            //更新连线的终点坐标
+            lines.attr("x1", function (d) {
+                return d.source.x;
+            });
+            lines.attr("y1", function (d) {
+                return d.source.y;
+            });
+            lines.attr("x2", function (d) {
+                return d.target.x;
+            });
+            lines.attr("y2", function (d) {
+                return d.target.y;
+            });
+            //更新节点坐标
+            circles.attr("cx", function (d) {
+                return d.x;
+            });
+            circles.attr("cy", function (d) {
+                return d.y;
+            });
+            //更新文字节点的坐标
+            texts.attr("x", function (d) {
+                return d.x;
+            });
+            texts.attr("y", function (d) {
+                return d.y;
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

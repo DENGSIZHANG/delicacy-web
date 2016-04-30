@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style/mainStyle.css"/>
+    <title>中国八大菜系之湘菜</title>
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/easing.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" id="body" style="overflow-y: visible;">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+                <figure class="icon">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="欢迎欢迎热烈欢迎">
+                    </a>
+                </figure>
+                <a href="" class="navbar-brand">八大菜系之<b>湘菜</b></a>
+            </div>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right nav-link">
+                <li class="active">
+                    <a href="index.html"><i class="icon-spinner icon-spin"></i>&nbsp;八大菜系</a></a>
+                </li>
+
+                <!-- <li>
+                    <a href="cooking-culture-of-China.html">
+                        <i class="icon-food"></i> 中国吃文化
+                    </a>
+                </li> -->
+                <li><a href="food-and-food.html"><i class="icon-coffee"></i> 美食典故</a>
+                </li>
+                <li><a href="Intel-health-guide.html"><i class="icon-stethoscope"></i> 健康指南</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div id="eight_btn_section">
+    <div class="container-fluid content">
+        <div class="row eight_btn">
+            <div class="col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Shandong-cuisine.html" type="button" class="btn btn-info typeOfBtn">鲁菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Sichuan-Cuisine.html" type="button" class="btn btn-info typeOfBtn">川菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Jiangsu-Cuisine.html" type="button" class="btn btn-info typeOfBtn">苏菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-4">
+                <a href="Guangzhou-Cuisine.html" type="button" class="btn btn-info typeOfBtn">粤菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Zhejiang-Cuisine.html" type="button" class="btn btn-info typeOfBtn">浙菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Fujian-Cuisine.html" type="button" class="btn btn-info typeOfBtn">闽菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Hunan-Cuisine.html" type="button" class="btn btn-info active">湘菜</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-2">
+                <a href="Anhui-Cuisine.html" type="button" class="btn btn-info typeOfBtn">徽菜</a>
+            </div>
+            <div class="col-md-2 col-sm-2 "></div>
+        </div>
+    </div>
+</div>-->
+<!--页面主体-->
+<div id="food-section" class="Hunan-cuisine">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class='all'>
+                    <div class='box'>
+                        <a href='Shandong-cuisine.html'>
+                            <div class='card bg-01'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 鲁菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Sichuan-Cuisine.html'>
+                            <div class='card bg-02'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 川菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Jiangsu-Cuisine.html'>
+                            <div class='card bg-03'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 苏菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Guangzhou-Cuisine.html'>
+                            <div class='card bg-04'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 粤菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Zhejiang-Cuisine.html'>
+                            <div class='card bg-05'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 浙菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Fujian-Cuisine.html'>
+                            <div class='card bg-06'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 闽菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Hunan-Cuisine.html'>
+                            <div class='card bg-07 active'><span class='card-content'><span
+                                    class="glyphicon glyphicon-map-marker"></span> 湘菜</span></div>
+                        </a>
+                    </div>
+                    <div class='box'>
+                        <a href='Anhui-Cuisine.html'>
+                            <div class='card bg-08'><span class='card-content'><span
+                                    class="glyphicon glyphicon-send"></span> 徽菜</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--左侧鲁菜介绍页面-->
+            <div class="col-md-10">
+                <div class="row ">
+                    <ol class="breadcrumb col-md-12">
+                        <li><!--<span class="glyphicon glyphicon-map-marker"></span>--><i class="icon-tint"></i> 当前位置：</li>
+                        <li><a href="home.html"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="index.html"><i class="icon-coffee"></i> 八大菜系</a></li>
+                        <li class="active">苏菜</li>
+                    </ol>
+                </div>
+                <!--百度百科和主要流派-->
+                <section id="section1">
+                    <h4>（一）百度百科</h4>
+
+                    <p style="text-indent: 2em">
+                        湘菜，又叫湖南菜，是中国历史悠久的八大菜系之一，早在汉朝就已经形成菜系。以湘江流域、洞庭湖区和湘西山区三种地方风味为主。
+                        湘菜制作精细，用料上比较广泛，口味多变，品种繁多；色泽上油重色浓，讲求实惠；品味上注重酸辣、香鲜、软嫩；制法上以煨、炖、腊、蒸、炒诸法见称。 </p>
+                </section>
+                <section class="row">
+                    <h4 id="section2">（二）主要流派</h4>
+
+                    <div class="col-md-5 col-sm-5" id="div">
+                        <svg id="graph" width="100%">
+                        </svg>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div>
+                            <p>
+                                <b> 洞庭湖区</b>，以烹制河鲜、家禽和家畜见长，多用炖、烧、蒸、腊的制法，其特点是芡大油厚，咸辣香软。炖菜常用火锅上桌，民间则用蒸钵置泥炉上炖煮，俗称蒸钵炉子。往往是边煮边吃边下料，滚热鲜嫩，津津有味，当地有“不愿进朝当驸马，只要蒸钵炉子咕咕嘎”的民谣，充分说明炖菜广为人民喜爱。<br/>
+                                <b> 湘江流域</b>，以长沙、衡阳、湘潭为中心，是湖南菜系的主要代表。它制作精细，用料广泛，口味多变，品种繁多。其特点是：油重色浓，讲求实惠，在品味上注重酸辣、香鲜、软嫩。在制法上以煨、炖、腊、蒸、炒诸法见称。<br/>
+                                <b> 湘西山区</b>，擅长制作山珍野味、烟熏腊肉和各种腌肉，口味侧重咸香酸辣，常以柴炭作燃料，有浓厚的山乡风味。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--发展历史-->
+                <section id="section3">
+                    <h4>（三）发展历史</h4>
+                    <div class="panel panel-default" id="history-info">
+                        <div class="panel-body">
+                            <table class="table table-condensed">
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-2 first-Tr" id="section3-1"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>春秋战国时期</p>
+                                    </td>
+                                    <td class="first-Tr">
+                                        <p>
+                                            秦汉两代，湖南的饮食文化逐步形成了一个从用料、烹调方法到风味风格都比较完整的体系，其使用原料之丰盛，烹调方法之多彩，风味之鲜美，都是比较突出的。仅肉羹一项就有5大类24种。 </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-2"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>秦汉两代时期
+                                    </p></td>
+                                    <td><p>
+                                        河南光洲固始的王审知兄弟带兵入闽建立“闽国”，对福建饮食文化的进一步开发、繁荣，产生了积极的促进作用。如，在唐代以前中原地区已开始使用红曲作为烹饪的作料。唐朝徐坚的《初学记》云：“瓜州红曲，参糅相半，软滑膏润，入口流散。”这种红曲由中原移民带入福建后，由于大量使用红曲，红色也就成为闽菜烹饪美学中的主要色调，有特殊香味的红色酒糟也成了烹饪时常用的作料，红糟鱼、红糟鸡、红糟肉等都是闽菜主要的菜肴，“红曲烹调”成为福州、厦门、泉州先后对外通商，四方商贾云集，文化交流日益频繁，海外的技艺也相随传入。闽菜在继承传统技艺的基础上，博采各路菜肴之精华，对粗糙、滑腻的习俗，加以调整变易，逐渐朝着精细、清淡、典雅的品格演变，以至发展成为格调甚高的闽菜体系。
+
+                                    </p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-3"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>西汉时期
+                                    </p></td>
+                                    <td><p>
+                                        出土的西汉遗策中可以看出，汉代湖南饮食生活中的烹调方法比战国时代已有进一步的发展，发展到羹、炙、煎、熬、蒸、濯、脍、脯、腊、炮、醢、苴等多种。烹调用的调料就有盐、酱、豉、曲、糖、蜜、韭、梅、桂皮、花椒、茱萸等。由于湖南物产丰富，素有“鱼米之乡”的美称。
+                                    </p></td>
+                                </tr>
+                                <tr>
+                                    <td id="section3-4"><p><span
+                                            class="glyphicon glyphicon-hand-right">&nbsp;</span>如今</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            自唐、宋以来，尤其在明、清之际湖南饮食文化的发展更趋完善，逐步形成了全国八大菜系中一支具有鲜明特色的湘菜系
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!--经典菜品-->
+                <section id="section4">
+                    <h4>（四）经典菜品</h4>
+                    <div class="main-posts">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="device" class="gridalicious">
+                                    <div class="galcolumn">
+                                        <!--菜品图片展示-1-->
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Hunan-cuisine/1.jpg" alt="金鱼戏莲">
+
+                                                <div class="title-over">
+                                                    <h4><a>金鱼戏莲</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/73925.htm"
+                                                                target="_blank">金鱼戏莲</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            “金鱼戏莲”以鱿鱼为主料巧制而成，鱿鱼卷似金鱼，嬉戏于以鸡蛋、虾料子和青豆精制的群莲中，菜名即由此而得。此菜刀工精湛，酸辣突鲜，鱿鱼脆嫩，莲蓬滑润。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Hunan-cuisine/2.jpg" alt="口味虾">
+
+                                                <div class="title-over">
+                                                    <h4><a>口味虾</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/77908.htm"
+                                                                target="_blank">口味虾</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            麻辣小龙虾又叫长沙口味虾、香辣小龙虾等，是湖南省著名的汉族小吃，以小龙虾制成，口味辣鲜香，色泽红亮，质地滑嫩，滋味香辣。20世纪末开始传遍全国，成为人们夏夜街边啤酒摊的经典小吃。 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Hunan-cuisine/3.jpg" alt="剁椒鱼头">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">剁椒鱼头</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/64634.htm"
+                                                                target="_blank">剁椒鱼头</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            剁椒鱼头（英文名：Chop bell pepper fish
+                                                            head）是湖南湘潭以及湘赣交界地方的一道汉族传统名菜，属湘菜系。以鱼头的“味鲜”和剁辣椒的“辣”为一体，风味独具一格。特别指出的是此菜所使用的油是茶油。湖南湘潭的剁椒鱼头是在大街小巷的大小餐馆酒店都可以吃到的。 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Hunan-cuisine/4.jpg" alt="永州血鸭">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">永州血鸭</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/403325.htm"
+                                                                target="_blank">永州血鸭</a></h4>
+
+                                                        <p>
+                                                            永州血鸭是湖南永州的一款汉族传统名菜。永州血鸭分为多种，有道县，新田、宁远、蓝山、东安等多个说法。在当地，几乎家家户户都会制作此菜。具有美味、开胃凉血的特点。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Hunan-cuisine/5.jpg" alt="毛氏红烧肉">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">毛氏红烧肉</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/view/155600.htm"
+                                                                target="_blank">毛氏红烧肉</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            毛氏红烧肉是一道色香味俱全的汉族名肴，属于湘菜系。此菜甜而不腻，香味可口。毛泽东专属菜系（根据他的口味而发明），因为毛泽东小时候家里做过酱油，而酱油独特的制作流程中的副产品则给他当时幼小的心灵蒙上了一层挥之不去的阴影。所以他吃红烧肉不用酱油，而是用糖慢慢熬成红色。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-masonry item">
+                                            <div class="post-thumb">
+                                                <img src="images/Hunan-cuisine/6.jpg" alt="臭豆腐">
+
+                                                <div class="title-over">
+                                                    <h4><a href="#">臭豆腐</a></h4>
+                                                </div>
+                                                <div class="post-hover text-center">
+                                                    <div class="inside">
+                                                        <h4 data-toggle="tooltip" data-placement="top"
+                                                            title="百度百科查看详情"><a
+                                                                href="http://baike.baidu.com/subview/1734/7031520.htm"
+                                                                target="_blank">臭豆腐</a>
+                                                        </h4>
+
+                                                        <p>
+                                                            是湖南省著名的汉族传统小吃，属于湘菜系。此菜用黄豆为原料的水豆腐，经过专用卤水浸泡半月，再以茶油经文火炸焦，佐以麻油，辣酱。它具有"黑如墨，香如醇，嫩如酥，软如绒"的特点，奇在以臭命名，不同于其它食卤以香自翊。闻起来臭，吃起来香，外焦微脆，内软味鲜。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="col-md-12 more-info">-->
+                                <!--<a type="button" class="btn btn-info"-->
+                                <!--href="http://www.360doc.com/content/14/0929/01/18960088_413124870.shtml"-->
+                                <!--target="_blank">查看十大经典鲁菜</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--右侧锚点介绍-->
+            <div class="col-md-1">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked left-nav">
+                        <li class="active"><a href="#body">百度百科</a></li>
+                        <li><a href="#section2">主要流派</a></li>
+                        <li><a href="#section3">发展历史</a></li>
+                        <li><a href="#section4">经典菜品</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--返回顶部按钮-->
+<div class="footer-section">
+    <div class="container">
+        <a href="javascript:void(0)" id="toTop" style="display: none;"></a>
+    </div>
+</div>
+<script type="text/javascript" src="javascript/d3.min.js"></script>
+<script type="text/javascript" src="javascript/global.js"></script>
+<script type="text/javascript" src="javascript/jquery.grid-a-licious.min.js"></script>
+<!--瀑布流加载图片-->
+
+<script type="text/javascript">
+    $(function () {
+        ///湘菜的成份结构
+        var svg = d3.select("#graph");
+        var s = document.getElementById("div").clientWidth;
+        var width = s;
+        console.log("宽度" + s);
+        var height = 320;
+        var nodes = [{name: "湘菜"},
+            {name: "洞庭湖区"},
+            {name: "湘江流域"},
+            {name: "湘西山区"}
+        ];
+        var edges = [{source: 0, target: 1},
+            {source: 0, target: 2},
+            {source: 0, target: 3}
+        ];
+        var force = d3.layout.force()
+                .nodes(nodes)           //设定节点数组
+                .links(edges)           //设定连线数组
+                .size([width, height])   //设定作用范围
+                .linkDistance(150)       //设定连线的距离
+                .charge(-400);          //设定节点的电荷数
+        force.start();//开启布局计算
+        console.log(nodes);
+        console.log(edges);
+        var color = d3.scale.category20();
+
+        //绘制连线
+        var lines = svg.selectAll(".forceLine")
+                .data(edges)
+                .enter()
+                .append("line")
+                .attr("class", "forceLine")
+                .attr("stroke", "#ccc")
+                .attr("stroke-width", 1);
+        //绘制节点
+        var circles = svg.selectAll(".forceCircles")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "forceCircle")
+                .attr("r", 35)
+                .style("fill", function (d, i) {
+                    return color(i);
+                })
+                .call(force.drag);//允许拖动
+        //绘制文字
+        var texts = svg.selectAll(".forceText")
+                .data(nodes)
+                .enter()
+                .append("text")
+                .attr("class", "forceText")
+                .attr("x", function (d) {
+                    return d.x;
+                })
+                .attr("y", function (d) {
+                    return d.y;
+                })
+                .attr("dx", "-1.2em")
+                .attr("dy", ".3em")
+                .text(function (d) {
+                    return d.name;
+                });
+
+        force.on("tick", function () {
+            //更新连线的终点坐标
+            lines.attr("x1", function (d) {
+                return d.source.x;
+            });
+            lines.attr("y1", function (d) {
+                return d.source.y;
+            });
+            lines.attr("x2", function (d) {
+                return d.target.x;
+            });
+            lines.attr("y2", function (d) {
+                return d.target.y;
+            });
+            //更新节点坐标
+            circles.attr("cx", function (d) {
+                return d.x;
+            });
+            circles.attr("cy", function (d) {
+                return d.y;
+            });
+            //更新文字节点的坐标
+            texts.attr("x", function (d) {
+                return d.x;
+            });
+            texts.attr("y", function (d) {
+                return d.y;
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
